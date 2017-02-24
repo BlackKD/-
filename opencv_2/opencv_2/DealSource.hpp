@@ -13,20 +13,24 @@
 #include "CreatNewPicture.hpp"
 #include "Header.h"
 #define K_NUMB 10
+#include <string>
+#include <iostream>
+#include <vector>
+using namespace std;
 
-char * TestPath = "/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/14-220/";
 
 typedef struct TestLine{
-    char * Name;
-    char * Path;
-    char * NewPath;
-    char * MostLike[K_NUMB];
-    char * NewLike[K_NUMB];
+    string Name;
+    string Path;
+    string NewPath;
+    string MostLike[K_NUMB];
+    string NewLike[K_NUMB];
     int LikeCount;
 }testline;
 
-vector<TestLine> TestPool;
+extern vector<TestLine> TestPool;
 
-bool InitializationPool(char * FileName);
+bool InitializationPool(const char * FilePath);
+bool get_10_top_path();
 
 #endif /* DealSource_hpp */

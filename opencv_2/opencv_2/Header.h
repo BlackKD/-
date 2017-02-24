@@ -7,6 +7,7 @@
 //
 
 #ifndef Header_h
+#define Header_h
 #include <iostream>
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
@@ -19,7 +20,7 @@
 
 
 int comparetest(int argc, char* argv[]);
-#define Header_h
+
 
 
 #endif /* Header_h */
