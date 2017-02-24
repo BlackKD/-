@@ -1,0 +1,1339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A0F71C01E110D33002645D6 /* libAliST.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B11E110D32002645D6 /* libAliST.dylib */; };
+		9A0F71C11E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B21E110D32002645D6 /* libopencv_calib3d.3.2.0.dylib */; };
+		9A0F71C21E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B31E110D32002645D6 /* libopencv_core.3.2.0.dylib */; };
+		9A0F71C31E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B41E110D32002645D6 /* libopencv_features2d.3.2.0.dylib */; };
+		9A0F71C41E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B51E110D32002645D6 /* libopencv_flann.3.2.0.dylib */; };
+		9A0F71C51E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B61E110D32002645D6 /* libopencv_highgui.3.2.0.dylib */; };
+		9A0F71C61E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B71E110D32002645D6 /* libopencv_imgcodecs.3.2.0.dylib */; };
+		9A0F71C71E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B81E110D32002645D6 /* libopencv_imgproc.3.2.0.dylib */; };
+		9A0F71C81E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70B91E110D32002645D6 /* libopencv_ml.3.2.0.dylib */; };
+		9A0F71C91E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BA1E110D32002645D6 /* libopencv_objdetect.3.2.0.dylib */; };
+		9A0F71CA1E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BB1E110D32002645D6 /* libopencv_photo.3.2.0.dylib */; };
+		9A0F71CB1E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BC1E110D32002645D6 /* libopencv_shape.3.2.0.dylib */; };
+		9A0F71CC1E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BD1E110D32002645D6 /* libopencv_stitching.3.2.0.dylib */; };
+		9A0F71CD1E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BE1E110D32002645D6 /* libopencv_superres.3.2.0.dylib */; };
+		9A0F71CE1E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70BF1E110D32002645D6 /* libopencv_video.3.2.0.dylib */; };
+		9A0F71CF1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C01E110D32002645D6 /* libopencv_videoio.3.2.0.dylib */; };
+		9A0F71D01E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C11E110D32002645D6 /* libopencv_videostab.3.2.0.dylib */; };
+		9A0F71D11E110D33002645D6 /* libosxfuse_i32.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C21E110D32002645D6 /* libosxfuse_i32.2.dylib */; };
+		9A0F71D21E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C31E110D32002645D6 /* libosxfuse_i64.2.dylib */; };
+		9A0F71D31E110D33002645D6 /* libyara.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C41E110D32002645D6 /* libyara.3.dylib */; };
+		9A0F71D41E110D33002645D6 /* libaspell.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C51E110D32002645D6 /* libaspell.15.dylib */; };
+		9A0F71D51E110D33002645D6 /* libaspell.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C61E110D32002645D6 /* libaspell.15.dylib */; };
+		9A0F71D61E110D33002645D6 /* libatk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C71E110D32002645D6 /* libatk-1.0.0.dylib */; };
+		9A0F71D71E110D33002645D6 /* libatk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C81E110D32002645D6 /* libatk-1.0.0.dylib */; };
+		9A0F71D81E110D33002645D6 /* libcairo-gobject.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70C91E110D32002645D6 /* libcairo-gobject.2.dylib */; };
+		9A0F71D91E110D33002645D6 /* libcairo-gobject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CA1E110D32002645D6 /* libcairo-gobject.a */; };
+		9A0F71DA1E110D33002645D6 /* libcairo-gobject.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CB1E110D32002645D6 /* libcairo-gobject.2.dylib */; };
+		9A0F71DB1E110D33002645D6 /* libcairo-script-interpreter.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CC1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */; };
+		9A0F71DC1E110D33002645D6 /* libcairo-script-interpreter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CD1E110D32002645D6 /* libcairo-script-interpreter.a */; };
+		9A0F71DD1E110D33002645D6 /* libcairo-script-interpreter.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CE1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */; };
+		9A0F71DE1E110D33002645D6 /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70CF1E110D32002645D6 /* libcairo.2.dylib */; };
+		9A0F71DF1E110D33002645D6 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D01E110D32002645D6 /* libcairo.a */; };
+		9A0F71E01E110D33002645D6 /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D11E110D32002645D6 /* libcairo.2.dylib */; };
+		9A0F71E11E110D33002645D6 /* libcroco-0.6.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D21E110D32002645D6 /* libcroco-0.6.3.dylib */; };
+		9A0F71E21E110D33002645D6 /* libcroco-0.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D31E110D32002645D6 /* libcroco-0.6.a */; };
+		9A0F71E31E110D33002645D6 /* libcroco-0.6.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D41E110D32002645D6 /* libcroco-0.6.3.dylib */; };
+		9A0F71E41E110D33002645D6 /* libdb_cxx-6.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D51E110D32002645D6 /* libdb_cxx-6.1.a */; };
+		9A0F71E51E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D61E110D32002645D6 /* libdb_cxx-6.1.dylib */; };
+		9A0F71E61E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D71E110D32002645D6 /* libdb_cxx-6.1.dylib */; };
+		9A0F71E71E110D33002645D6 /* libdb_cxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D81E110D32002645D6 /* libdb_cxx.a */; };
+		9A0F71E81E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70D91E110D32002645D6 /* libdb_cxx-6.1.dylib */; };
+		9A0F71E91E110D33002645D6 /* libdb-6.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DA1E110D32002645D6 /* libdb-6.1.a */; };
+		9A0F71EA1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DB1E110D32002645D6 /* libdb-6.1.dylib */; };
+		9A0F71EB1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DC1E110D32002645D6 /* libdb-6.1.dylib */; };
+		9A0F71EC1E110D33002645D6 /* libdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DD1E110D32002645D6 /* libdb.a */; };
+		9A0F71ED1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DE1E110D32002645D6 /* libdb-6.1.dylib */; };
+		9A0F71EE1E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70DF1E110D32002645D6 /* libecpg_compat.3.6.dylib */; };
+		9A0F71EF1E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E01E110D32002645D6 /* libecpg_compat.3.6.dylib */; };
+		9A0F71F01E110D33002645D6 /* libecpg_compat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E11E110D32002645D6 /* libecpg_compat.a */; };
+		9A0F71F11E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E21E110D32002645D6 /* libecpg_compat.3.6.dylib */; };
+		9A0F71F21E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E31E110D32002645D6 /* libecpg.6.6.dylib */; };
+		9A0F71F31E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E41E110D32002645D6 /* libecpg.6.6.dylib */; };
+		9A0F71F41E110D33002645D6 /* libecpg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E51E110D32002645D6 /* libecpg.a */; };
+		9A0F71F51E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E61E110D32002645D6 /* libecpg.6.6.dylib */; };
+		9A0F71F61E110D33002645D6 /* libenchant.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E71E110D33002645D6 /* libenchant.1.dylib */; };
+		9A0F71F71E110D33002645D6 /* libenchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E81E110D33002645D6 /* libenchant.a */; };
+		9A0F71F81E110D33002645D6 /* libenchant.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70E91E110D33002645D6 /* libenchant.1.dylib */; };
+		9A0F71F91E110D33002645D6 /* libepoxy.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70EA1E110D33002645D6 /* libepoxy.0.dylib */; };
+		9A0F71FA1E110D33002645D6 /* libepoxy.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70EB1E110D33002645D6 /* libepoxy.0.dylib */; };
+		9A0F71FB1E110D33002645D6 /* libevent_core-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70EC1E110D33002645D6 /* libevent_core-2.0.5.dylib */; };
+		9A0F71FC1E110D33002645D6 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70ED1E110D33002645D6 /* libevent_core.a */; };
+		9A0F71FD1E110D33002645D6 /* libevent_core-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70EE1E110D33002645D6 /* libevent_core-2.0.5.dylib */; };
+		9A0F71FE1E110D33002645D6 /* libevent_extra-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70EF1E110D33002645D6 /* libevent_extra-2.0.5.dylib */; };
+		9A0F71FF1E110D33002645D6 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F01E110D33002645D6 /* libevent_extra.a */; };
+		9A0F72001E110D33002645D6 /* libevent_extra-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F11E110D33002645D6 /* libevent_extra-2.0.5.dylib */; };
+		9A0F72011E110D33002645D6 /* libevent_openssl-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F21E110D33002645D6 /* libevent_openssl-2.0.5.dylib */; };
+		9A0F72021E110D33002645D6 /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F31E110D33002645D6 /* libevent_openssl.a */; };
+		9A0F72031E110D33002645D6 /* libevent_openssl-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F41E110D33002645D6 /* libevent_openssl-2.0.5.dylib */; };
+		9A0F72041E110D33002645D6 /* libevent_pthreads-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F51E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */; };
+		9A0F72051E110D33002645D6 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F61E110D33002645D6 /* libevent_pthreads.a */; };
+		9A0F72061E110D33002645D6 /* libevent_pthreads-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F71E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */; };
+		9A0F72071E110D33002645D6 /* libevent-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F81E110D33002645D6 /* libevent-2.0.5.dylib */; };
+		9A0F72081E110D33002645D6 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70F91E110D33002645D6 /* libevent.a */; };
+		9A0F72091E110D33002645D6 /* libevent-2.0.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FA1E110D33002645D6 /* libevent-2.0.5.dylib */; };
+		9A0F720A1E110D33002645D6 /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FB1E110D33002645D6 /* libfontconfig.1.dylib */; };
+		9A0F720B1E110D33002645D6 /* libfontconfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FC1E110D33002645D6 /* libfontconfig.a */; };
+		9A0F720C1E110D33002645D6 /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FD1E110D33002645D6 /* libfontconfig.1.dylib */; };
+		9A0F720D1E110D33002645D6 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FE1E110D33002645D6 /* libfreetype.6.dylib */; };
+		9A0F720E1E110D33002645D6 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F70FF1E110D33002645D6 /* libfreetype.a */; };
+		9A0F720F1E110D33002645D6 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71001E110D33002645D6 /* libfreetype.6.dylib */; };
+		9A0F72101E110D33002645D6 /* libgailutil-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71011E110D33002645D6 /* libgailutil-3.0.dylib */; };
+		9A0F72111E110D33002645D6 /* libgailutil-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71021E110D33002645D6 /* libgailutil-3.0.dylib */; };
+		9A0F72121E110D33002645D6 /* libgailutil.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71031E110D33002645D6 /* libgailutil.18.dylib */; };
+		9A0F72131E110D33002645D6 /* libgailutil.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71041E110D33002645D6 /* libgailutil.18.dylib */; };
+		9A0F72141E110D33002645D6 /* libgdbm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71051E110D33002645D6 /* libgdbm.4.dylib */; };
+		9A0F72151E110D33002645D6 /* libgdbm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71061E110D33002645D6 /* libgdbm.a */; };
+		9A0F72161E110D33002645D6 /* libgdbm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71071E110D33002645D6 /* libgdbm.4.dylib */; };
+		9A0F72171E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71081E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */; };
+		9A0F72181E110D33002645D6 /* libgdk_pixbuf-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71091E110D33002645D6 /* libgdk_pixbuf-2.0.a */; };
+		9A0F72191E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710A1E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */; };
+		9A0F721A1E110D33002645D6 /* libgdk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710B1E110D33002645D6 /* libgdk-3.0.dylib */; };
+		9A0F721B1E110D33002645D6 /* libgdk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710C1E110D33002645D6 /* libgdk-3.0.dylib */; };
+		9A0F721C1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710D1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */; };
+		9A0F721D1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710E1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */; };
+		9A0F721E1E110D33002645D6 /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F710F1E110D33002645D6 /* libgio-2.0.0.dylib */; };
+		9A0F721F1E110D33002645D6 /* libgio-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71101E110D33002645D6 /* libgio-2.0.a */; };
+		9A0F72201E110D33002645D6 /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71111E110D33002645D6 /* libgio-2.0.0.dylib */; };
+		9A0F72211E110D33002645D6 /* libgirepository-1.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71121E110D33002645D6 /* libgirepository-1.0.1.dylib */; };
+		9A0F72221E110D33002645D6 /* libgirepository-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71131E110D33002645D6 /* libgirepository-1.0.a */; };
+		9A0F72231E110D33002645D6 /* libgirepository-1.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71141E110D33002645D6 /* libgirepository-1.0.1.dylib */; };
+		9A0F72241E110D33002645D6 /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71151E110D33002645D6 /* libglib-2.0.0.dylib */; };
+		9A0F72251E110D33002645D6 /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71161E110D33002645D6 /* libglib-2.0.a */; };
+		9A0F72261E110D33002645D6 /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71171E110D33002645D6 /* libglib-2.0.0.dylib */; };
+		9A0F72271E110D33002645D6 /* libgmodule-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71181E110D33002645D6 /* libgmodule-2.0.0.dylib */; };
+		9A0F72281E110D33002645D6 /* libgmodule-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71191E110D33002645D6 /* libgmodule-2.0.a */; };
+		9A0F72291E110D33002645D6 /* libgmodule-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711A1E110D33002645D6 /* libgmodule-2.0.0.dylib */; };
+		9A0F722A1E110D33002645D6 /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711B1E110D33002645D6 /* libgobject-2.0.0.dylib */; };
+		9A0F722B1E110D33002645D6 /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711C1E110D33002645D6 /* libgobject-2.0.a */; };
+		9A0F722C1E110D33002645D6 /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711D1E110D33002645D6 /* libgobject-2.0.0.dylib */; };
+		9A0F722D1E110D33002645D6 /* libgthread-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711E1E110D33002645D6 /* libgthread-2.0.0.dylib */; };
+		9A0F722E1E110D33002645D6 /* libgthread-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F711F1E110D33002645D6 /* libgthread-2.0.a */; };
+		9A0F722F1E110D33002645D6 /* libgthread-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71201E110D33002645D6 /* libgthread-2.0.0.dylib */; };
+		9A0F72301E110D33002645D6 /* libgtk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71211E110D33002645D6 /* libgtk-3.0.dylib */; };
+		9A0F72311E110D33002645D6 /* libgtk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71221E110D33002645D6 /* libgtk-3.0.dylib */; };
+		9A0F72321E110D33002645D6 /* libgtk-quartz-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71231E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */; };
+		9A0F72331E110D33002645D6 /* libgtk-quartz-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71241E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */; };
+		9A0F72341E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71251E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */; };
+		9A0F72351E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71261E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */; };
+		9A0F72361E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71271E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */; };
+		9A0F72371E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71281E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */; };
+		9A0F72381E110D33002645D6 /* libgtksourceview-3.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71291E110D33002645D6 /* libgtksourceview-3.0.1.dylib */; };
+		9A0F72391E110D33002645D6 /* libgtksourceview-3.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712A1E110D33002645D6 /* libgtksourceview-3.0.1.dylib */; };
+		9A0F723A1E110D33002645D6 /* libharfbuzz-gobject.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712B1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */; };
+		9A0F723B1E110D33002645D6 /* libharfbuzz-gobject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712C1E110D33002645D6 /* libharfbuzz-gobject.a */; };
+		9A0F723C1E110D33002645D6 /* libharfbuzz-gobject.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712D1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */; };
+		9A0F723D1E110D33002645D6 /* libharfbuzz-icu.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712E1E110D33002645D6 /* libharfbuzz-icu.0.dylib */; };
+		9A0F723E1E110D33002645D6 /* libharfbuzz-icu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F712F1E110D33002645D6 /* libharfbuzz-icu.a */; };
+		9A0F723F1E110D33002645D6 /* libharfbuzz-icu.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71301E110D33002645D6 /* libharfbuzz-icu.0.dylib */; };
+		9A0F72401E110D33002645D6 /* libharfbuzz.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71311E110D33002645D6 /* libharfbuzz.0.dylib */; };
+		9A0F72411E110D33002645D6 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71321E110D33002645D6 /* libharfbuzz.a */; };
+		9A0F72421E110D33002645D6 /* libharfbuzz.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71331E110D33002645D6 /* libharfbuzz.0.dylib */; };
+		9A0F72431E110D33002645D6 /* libjpeg.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71341E110D33002645D6 /* libjpeg.8.dylib */; };
+		9A0F72441E110D33002645D6 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71351E110D33002645D6 /* libjpeg.a */; };
+		9A0F72451E110D33002645D6 /* libjpeg.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71361E110D33002645D6 /* libjpeg.8.dylib */; };
+		9A0F72461E110D33002645D6 /* libltdl.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71371E110D33002645D6 /* libltdl.7.dylib */; };
+		9A0F72471E110D33002645D6 /* libltdl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71381E110D33002645D6 /* libltdl.a */; };
+		9A0F72481E110D33002645D6 /* libltdl.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71391E110D33002645D6 /* libltdl.7.dylib */; };
+		9A0F72491E110D33002645D6 /* liblzma.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713A1E110D33002645D6 /* liblzma.5.dylib */; };
+		9A0F724A1E110D33002645D6 /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713B1E110D33002645D6 /* liblzma.a */; };
+		9A0F724B1E110D33002645D6 /* liblzma.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713C1E110D33002645D6 /* liblzma.5.dylib */; };
+		9A0F724C1E110D33002645D6 /* libmagic.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713D1E110D33002645D6 /* libmagic.1.dylib */; };
+		9A0F724D1E110D33002645D6 /* libmagic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713E1E110D33002645D6 /* libmagic.a */; };
+		9A0F724E1E110D33002645D6 /* libmagic.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F713F1E110D33002645D6 /* libmagic.1.dylib */; };
+		9A0F724F1E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71401E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */; };
+		9A0F72501E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71411E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */; };
+		9A0F72511E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71421E110D33002645D6 /* libopencv_core.3.2.0.dylib */; };
+		9A0F72521E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71431E110D33002645D6 /* libopencv_core.3.2.0.dylib */; };
+		9A0F72531E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71441E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */; };
+		9A0F72541E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71451E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */; };
+		9A0F72551E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71461E110D33002645D6 /* libopencv_flann.3.2.0.dylib */; };
+		9A0F72561E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71471E110D33002645D6 /* libopencv_flann.3.2.0.dylib */; };
+		9A0F72571E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71481E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */; };
+		9A0F72581E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71491E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */; };
+		9A0F72591E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714A1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */; };
+		9A0F725A1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714B1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */; };
+		9A0F725B1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714C1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */; };
+		9A0F725C1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714D1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */; };
+		9A0F725D1E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714E1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */; };
+		9A0F725E1E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F714F1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */; };
+		9A0F725F1E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71501E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */; };
+		9A0F72601E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71511E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */; };
+		9A0F72611E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71521E110D33002645D6 /* libopencv_photo.3.2.0.dylib */; };
+		9A0F72621E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71531E110D33002645D6 /* libopencv_photo.3.2.0.dylib */; };
+		9A0F72631E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71541E110D33002645D6 /* libopencv_shape.3.2.0.dylib */; };
+		9A0F72641E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71551E110D33002645D6 /* libopencv_shape.3.2.0.dylib */; };
+		9A0F72651E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71561E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */; };
+		9A0F72661E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71571E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */; };
+		9A0F72671E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71581E110D33002645D6 /* libopencv_superres.3.2.0.dylib */; };
+		9A0F72681E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71591E110D33002645D6 /* libopencv_superres.3.2.0.dylib */; };
+		9A0F72691E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715A1E110D33002645D6 /* libopencv_video.3.2.0.dylib */; };
+		9A0F726A1E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715B1E110D33002645D6 /* libopencv_video.3.2.0.dylib */; };
+		9A0F726B1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715C1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */; };
+		9A0F726C1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715D1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */; };
+		9A0F726D1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715E1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */; };
+		9A0F726E1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F715F1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */; };
+		9A0F726F1E110D33002645D6 /* libosxfuse_i32.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71601E110D33002645D6 /* libosxfuse_i32.2.dylib */; };
+		9A0F72701E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71621E110D33002645D6 /* libosxfuse_i64.2.dylib */; };
+		9A0F72711E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71641E110D33002645D6 /* libosxfuse_i64.2.dylib */; };
+		9A0F72721E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71651E110D33002645D6 /* libosxfuse_i64.2.dylib */; };
+		9A0F72731E110D33002645D6 /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71671E110D33002645D6 /* libpango-1.0.0.dylib */; };
+		9A0F72741E110D33002645D6 /* libpango-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71681E110D33002645D6 /* libpango-1.0.a */; };
+		9A0F72751E110D33002645D6 /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71691E110D33002645D6 /* libpango-1.0.0.dylib */; };
+		9A0F72761E110D33002645D6 /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716A1E110D33002645D6 /* libpangocairo-1.0.0.dylib */; };
+		9A0F72771E110D33002645D6 /* libpangocairo-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716B1E110D33002645D6 /* libpangocairo-1.0.a */; };
+		9A0F72781E110D33002645D6 /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716C1E110D33002645D6 /* libpangocairo-1.0.0.dylib */; };
+		9A0F72791E110D33002645D6 /* libpangoft2-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716D1E110D33002645D6 /* libpangoft2-1.0.0.dylib */; };
+		9A0F727A1E110D33002645D6 /* libpangoft2-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716E1E110D33002645D6 /* libpangoft2-1.0.a */; };
+		9A0F727B1E110D33002645D6 /* libpangoft2-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F716F1E110D33002645D6 /* libpangoft2-1.0.0.dylib */; };
+		9A0F727C1E110D33002645D6 /* libpcre.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71701E110D33002645D6 /* libpcre.1.dylib */; };
+		9A0F727D1E110D33002645D6 /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71711E110D33002645D6 /* libpcre.a */; };
+		9A0F727E1E110D33002645D6 /* libpcre.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71721E110D33002645D6 /* libpcre.1.dylib */; };
+		9A0F727F1E110D33002645D6 /* libpcre16.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71731E110D33002645D6 /* libpcre16.0.dylib */; };
+		9A0F72801E110D33002645D6 /* libpcre16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71741E110D33002645D6 /* libpcre16.a */; };
+		9A0F72811E110D33002645D6 /* libpcre16.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71751E110D33002645D6 /* libpcre16.0.dylib */; };
+		9A0F72821E110D33002645D6 /* libpcre32.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71761E110D33002645D6 /* libpcre32.0.dylib */; };
+		9A0F72831E110D33002645D6 /* libpcre32.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71771E110D33002645D6 /* libpcre32.a */; };
+		9A0F72841E110D33002645D6 /* libpcre32.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71781E110D33002645D6 /* libpcre32.0.dylib */; };
+		9A0F72851E110D33002645D6 /* libpcrecpp.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71791E110D33002645D6 /* libpcrecpp.0.dylib */; };
+		9A0F72861E110D33002645D6 /* libpcrecpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717A1E110D33002645D6 /* libpcrecpp.a */; };
+		9A0F72871E110D33002645D6 /* libpcrecpp.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717B1E110D33002645D6 /* libpcrecpp.0.dylib */; };
+		9A0F72881E110D33002645D6 /* libpcreposix.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717C1E110D33002645D6 /* libpcreposix.0.dylib */; };
+		9A0F72891E110D33002645D6 /* libpcreposix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717D1E110D33002645D6 /* libpcreposix.a */; };
+		9A0F728A1E110D33002645D6 /* libpcreposix.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717E1E110D33002645D6 /* libpcreposix.0.dylib */; };
+		9A0F728B1E110D33002645D6 /* libpeas-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F717F1E110D33002645D6 /* libpeas-1.0.0.dylib */; };
+		9A0F728C1E110D33002645D6 /* libpeas-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71801E110D33002645D6 /* libpeas-1.0.0.dylib */; };
+		9A0F728D1E110D33002645D6 /* libpeas-gtk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71811E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */; };
+		9A0F728E1E110D33002645D6 /* libpeas-gtk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71821E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */; };
+		9A0F728F1E110D33002645D6 /* libpgcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71831E110D33002645D6 /* libpgcommon.a */; };
+		9A0F72901E110D33002645D6 /* libpgport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71841E110D33002645D6 /* libpgport.a */; };
+		9A0F72911E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71851E110D33002645D6 /* libpgtypes.3.5.dylib */; };
+		9A0F72921E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71861E110D33002645D6 /* libpgtypes.3.5.dylib */; };
+		9A0F72931E110D33002645D6 /* libpgtypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71871E110D33002645D6 /* libpgtypes.a */; };
+		9A0F72941E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71881E110D33002645D6 /* libpgtypes.3.5.dylib */; };
+		9A0F72951E110D33002645D6 /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71891E110D33002645D6 /* libpixman-1.0.dylib */; };
+		9A0F72961E110D33002645D6 /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718A1E110D33002645D6 /* libpixman-1.a */; };
+		9A0F72971E110D33002645D6 /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718B1E110D33002645D6 /* libpixman-1.0.dylib */; };
+		9A0F72981E110D33002645D6 /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718C1E110D33002645D6 /* libpng16.a */; };
+		9A0F72991E110D33002645D6 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718D1E110D33002645D6 /* libpng16.16.dylib */; };
+		9A0F729A1E110D33002645D6 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718E1E110D33002645D6 /* libpng16.16.dylib */; };
+		9A0F729B1E110D33002645D6 /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F718F1E110D33002645D6 /* libpng16.a */; };
+		9A0F729C1E110D33002645D6 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71901E110D33002645D6 /* libpng16.16.dylib */; };
+		9A0F729D1E110D33002645D6 /* libpopt.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71911E110D33002645D6 /* libpopt.0.dylib */; };
+		9A0F729E1E110D33002645D6 /* libpopt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71921E110D33002645D6 /* libpopt.a */; };
+		9A0F729F1E110D33002645D6 /* libpopt.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71931E110D33002645D6 /* libpopt.0.dylib */; };
+		9A0F72A01E110D33002645D6 /* libpq.5.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71941E110D33002645D6 /* libpq.5.7.dylib */; };
+		9A0F72A11E110D33002645D6 /* libpq.5.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71951E110D33002645D6 /* libpq.5.7.dylib */; };
+		9A0F72A21E110D33002645D6 /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71961E110D33002645D6 /* libpq.a */; };
+		9A0F72A31E110D33002645D6 /* libpq.5.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71971E110D33002645D6 /* libpq.5.7.dylib */; };
+		9A0F72A41E110D33002645D6 /* libpspell.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71981E110D33002645D6 /* libpspell.15.dylib */; };
+		9A0F72A51E110D33002645D6 /* libpspell.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71991E110D33002645D6 /* libpspell.15.dylib */; };
+		9A0F72A61E110D33002645D6 /* libpyglib-2.0-python.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719A1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */; };
+		9A0F72A71E110D33002645D6 /* libpyglib-2.0-python.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719B1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */; };
+		9A0F72A81E110D33002645D6 /* librpm-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719C1E110D33002645D6 /* librpm-5.4.dylib */; };
+		9A0F72A91E110D33002645D6 /* librpm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719D1E110D33002645D6 /* librpm.a */; };
+		9A0F72AA1E110D33002645D6 /* librpm-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719E1E110D33002645D6 /* librpm-5.4.dylib */; };
+		9A0F72AB1E110D33002645D6 /* librpmbuild-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F719F1E110D33002645D6 /* librpmbuild-5.4.dylib */; };
+		9A0F72AC1E110D33002645D6 /* librpmbuild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A01E110D33002645D6 /* librpmbuild.a */; };
+		9A0F72AD1E110D33002645D6 /* librpmbuild-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A11E110D33002645D6 /* librpmbuild-5.4.dylib */; };
+		9A0F72AE1E110D33002645D6 /* librpmconstant-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A21E110D33002645D6 /* librpmconstant-5.4.dylib */; };
+		9A0F72AF1E110D33002645D6 /* librpmconstant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A31E110D33002645D6 /* librpmconstant.a */; };
+		9A0F72B01E110D33002645D6 /* librpmconstant-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A41E110D33002645D6 /* librpmconstant-5.4.dylib */; };
+		9A0F72B11E110D33002645D6 /* librpmdb-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A51E110D33002645D6 /* librpmdb-5.4.dylib */; };
+		9A0F72B21E110D33002645D6 /* librpmdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A61E110D33002645D6 /* librpmdb.a */; };
+		9A0F72B31E110D33002645D6 /* librpmdb-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A71E110D33002645D6 /* librpmdb-5.4.dylib */; };
+		9A0F72B41E110D33002645D6 /* librpmio-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A81E110D33002645D6 /* librpmio-5.4.dylib */; };
+		9A0F72B51E110D33002645D6 /* librpmio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71A91E110D33002645D6 /* librpmio.a */; };
+		9A0F72B61E110D33002645D6 /* librpmio-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AA1E110D33002645D6 /* librpmio-5.4.dylib */; };
+		9A0F72B71E110D33002645D6 /* librpmmisc-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AB1E110D33002645D6 /* librpmmisc-5.4.dylib */; };
+		9A0F72B81E110D33002645D6 /* librpmmisc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AC1E110D33002645D6 /* librpmmisc.a */; };
+		9A0F72B91E110D33002645D6 /* librpmmisc-5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AD1E110D33002645D6 /* librpmmisc-5.4.dylib */; };
+		9A0F72BA1E110D33002645D6 /* librsvg-2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AE1E110D33002645D6 /* librsvg-2.2.dylib */; };
+		9A0F72BB1E110D33002645D6 /* librsvg-2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71AF1E110D33002645D6 /* librsvg-2.a */; };
+		9A0F72BC1E110D33002645D6 /* librsvg-2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B01E110D33002645D6 /* librsvg-2.2.dylib */; };
+		9A0F72BD1E110D33002645D6 /* libtasn1.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B11E110D33002645D6 /* libtasn1.6.dylib */; };
+		9A0F72BE1E110D33002645D6 /* libtasn1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B21E110D33002645D6 /* libtasn1.a */; };
+		9A0F72BF1E110D33002645D6 /* libtasn1.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B31E110D33002645D6 /* libtasn1.6.dylib */; };
+		9A0F72C01E110D33002645D6 /* libtiff.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B41E110D33002645D6 /* libtiff.5.dylib */; };
+		9A0F72C11E110D33002645D6 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B51E110D33002645D6 /* libtiff.a */; };
+		9A0F72C21E110D33002645D6 /* libtiff.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B61E110D33002645D6 /* libtiff.5.dylib */; };
+		9A0F72C31E110D33002645D6 /* libtiffxx.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B71E110D33002645D6 /* libtiffxx.5.dylib */; };
+		9A0F72C41E110D33002645D6 /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B81E110D33002645D6 /* libtiffxx.a */; };
+		9A0F72C51E110D33002645D6 /* libtiffxx.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71B91E110D33002645D6 /* libtiffxx.5.dylib */; };
+		9A0F72C61E110D33002645D6 /* libuuid.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71BA1E110D33002645D6 /* libuuid.16.dylib */; };
+		9A0F72C71E110D33002645D6 /* libuuid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71BB1E110D33002645D6 /* libuuid.a */; };
+		9A0F72C81E110D33002645D6 /* libuuid.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71BC1E110D33002645D6 /* libuuid.16.dylib */; };
+		9A0F72C91E110D33002645D6 /* libyara.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71BD1E110D33002645D6 /* libyara.a */; };
+		9A0F72CA1E110D33002645D6 /* libyara.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F71BE1E110D33002645D6 /* libyara.3.dylib */; };
+		9ACFCB0F1E1107E300883AA7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFCB0E1E1107E300883AA7 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ACFCB091E1107E300883AA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A0F70B11E110D32002645D6 /* libAliST.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libAliST.dylib; sourceTree = "<group>"; };
+		9A0F70B21E110D32002645D6 /* libopencv_calib3d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B31E110D32002645D6 /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B41E110D32002645D6 /* libopencv_features2d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B51E110D32002645D6 /* libopencv_flann.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B61E110D32002645D6 /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B71E110D32002645D6 /* libopencv_imgcodecs.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgcodecs.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B81E110D32002645D6 /* libopencv_imgproc.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70B91E110D32002645D6 /* libopencv_ml.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ml.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BA1E110D32002645D6 /* libopencv_objdetect.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BB1E110D32002645D6 /* libopencv_photo.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_photo.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BC1E110D32002645D6 /* libopencv_shape.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_shape.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BD1E110D32002645D6 /* libopencv_stitching.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BE1E110D32002645D6 /* libopencv_superres.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70BF1E110D32002645D6 /* libopencv_video.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70C01E110D32002645D6 /* libopencv_videoio.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videoio.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70C11E110D32002645D6 /* libopencv_videostab.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F70C21E110D32002645D6 /* libosxfuse_i32.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i32.2.dylib; sourceTree = "<group>"; };
+		9A0F70C31E110D32002645D6 /* libosxfuse_i64.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i64.2.dylib; sourceTree = "<group>"; };
+		9A0F70C41E110D32002645D6 /* libyara.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libyara.3.dylib; sourceTree = "<group>"; };
+		9A0F70C51E110D32002645D6 /* libaspell.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libaspell.15.dylib; sourceTree = "<group>"; };
+		9A0F70C61E110D32002645D6 /* libaspell.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libaspell.15.dylib; sourceTree = "<group>"; };
+		9A0F70C71E110D32002645D6 /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libatk-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F70C81E110D32002645D6 /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libatk-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F70C91E110D32002645D6 /* libcairo-gobject.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcairo-gobject.2.dylib"; sourceTree = "<group>"; };
+		9A0F70CA1E110D32002645D6 /* libcairo-gobject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcairo-gobject.a"; sourceTree = "<group>"; };
+		9A0F70CB1E110D32002645D6 /* libcairo-gobject.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcairo-gobject.2.dylib"; sourceTree = "<group>"; };
+		9A0F70CC1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcairo-script-interpreter.2.dylib"; sourceTree = "<group>"; };
+		9A0F70CD1E110D32002645D6 /* libcairo-script-interpreter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcairo-script-interpreter.a"; sourceTree = "<group>"; };
+		9A0F70CE1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcairo-script-interpreter.2.dylib"; sourceTree = "<group>"; };
+		9A0F70CF1E110D32002645D6 /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcairo.2.dylib; sourceTree = "<group>"; };
+		9A0F70D01E110D32002645D6 /* libcairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcairo.a; sourceTree = "<group>"; };
+		9A0F70D11E110D32002645D6 /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcairo.2.dylib; sourceTree = "<group>"; };
+		9A0F70D21E110D32002645D6 /* libcroco-0.6.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcroco-0.6.3.dylib"; sourceTree = "<group>"; };
+		9A0F70D31E110D32002645D6 /* libcroco-0.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcroco-0.6.a"; sourceTree = "<group>"; };
+		9A0F70D41E110D32002645D6 /* libcroco-0.6.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libcroco-0.6.3.dylib"; sourceTree = "<group>"; };
+		9A0F70D51E110D32002645D6 /* libdb_cxx-6.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libdb_cxx-6.1.a"; sourceTree = "<group>"; };
+		9A0F70D61E110D32002645D6 /* libdb_cxx-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb_cxx-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70D71E110D32002645D6 /* libdb_cxx-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb_cxx-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70D81E110D32002645D6 /* libdb_cxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdb_cxx.a; sourceTree = "<group>"; };
+		9A0F70D91E110D32002645D6 /* libdb_cxx-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb_cxx-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70DA1E110D32002645D6 /* libdb-6.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libdb-6.1.a"; sourceTree = "<group>"; };
+		9A0F70DB1E110D32002645D6 /* libdb-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70DC1E110D32002645D6 /* libdb-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70DD1E110D32002645D6 /* libdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdb.a; sourceTree = "<group>"; };
+		9A0F70DE1E110D32002645D6 /* libdb-6.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libdb-6.1.dylib"; sourceTree = "<group>"; };
+		9A0F70DF1E110D32002645D6 /* libecpg_compat.3.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg_compat.3.6.dylib; sourceTree = "<group>"; };
+		9A0F70E01E110D32002645D6 /* libecpg_compat.3.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg_compat.3.6.dylib; sourceTree = "<group>"; };
+		9A0F70E11E110D32002645D6 /* libecpg_compat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libecpg_compat.a; sourceTree = "<group>"; };
+		9A0F70E21E110D32002645D6 /* libecpg_compat.3.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg_compat.3.6.dylib; sourceTree = "<group>"; };
+		9A0F70E31E110D32002645D6 /* libecpg.6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg.6.6.dylib; sourceTree = "<group>"; };
+		9A0F70E41E110D32002645D6 /* libecpg.6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg.6.6.dylib; sourceTree = "<group>"; };
+		9A0F70E51E110D32002645D6 /* libecpg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libecpg.a; sourceTree = "<group>"; };
+		9A0F70E61E110D32002645D6 /* libecpg.6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libecpg.6.6.dylib; sourceTree = "<group>"; };
+		9A0F70E71E110D33002645D6 /* libenchant.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libenchant.1.dylib; sourceTree = "<group>"; };
+		9A0F70E81E110D33002645D6 /* libenchant.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libenchant.a; sourceTree = "<group>"; };
+		9A0F70E91E110D33002645D6 /* libenchant.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libenchant.1.dylib; sourceTree = "<group>"; };
+		9A0F70EA1E110D33002645D6 /* libepoxy.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libepoxy.0.dylib; sourceTree = "<group>"; };
+		9A0F70EB1E110D33002645D6 /* libepoxy.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libepoxy.0.dylib; sourceTree = "<group>"; };
+		9A0F70EC1E110D33002645D6 /* libevent_core-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_core-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70ED1E110D33002645D6 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_core.a; sourceTree = "<group>"; };
+		9A0F70EE1E110D33002645D6 /* libevent_core-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_core-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70EF1E110D33002645D6 /* libevent_extra-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_extra-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F01E110D33002645D6 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_extra.a; sourceTree = "<group>"; };
+		9A0F70F11E110D33002645D6 /* libevent_extra-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_extra-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F21E110D33002645D6 /* libevent_openssl-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_openssl-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F31E110D33002645D6 /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_openssl.a; sourceTree = "<group>"; };
+		9A0F70F41E110D33002645D6 /* libevent_openssl-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_openssl-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F51E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_pthreads-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F61E110D33002645D6 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_pthreads.a; sourceTree = "<group>"; };
+		9A0F70F71E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent_pthreads-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F81E110D33002645D6 /* libevent-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70F91E110D33002645D6 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
+		9A0F70FA1E110D33002645D6 /* libevent-2.0.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libevent-2.0.5.dylib"; sourceTree = "<group>"; };
+		9A0F70FB1E110D33002645D6 /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfontconfig.1.dylib; sourceTree = "<group>"; };
+		9A0F70FC1E110D33002645D6 /* libfontconfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfontconfig.a; sourceTree = "<group>"; };
+		9A0F70FD1E110D33002645D6 /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfontconfig.1.dylib; sourceTree = "<group>"; };
+		9A0F70FE1E110D33002645D6 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.6.dylib; sourceTree = "<group>"; };
+		9A0F70FF1E110D33002645D6 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
+		9A0F71001E110D33002645D6 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.6.dylib; sourceTree = "<group>"; };
+		9A0F71011E110D33002645D6 /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgailutil-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F71021E110D33002645D6 /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgailutil-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F71031E110D33002645D6 /* libgailutil.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgailutil.18.dylib; sourceTree = "<group>"; };
+		9A0F71041E110D33002645D6 /* libgailutil.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgailutil.18.dylib; sourceTree = "<group>"; };
+		9A0F71051E110D33002645D6 /* libgdbm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgdbm.4.dylib; sourceTree = "<group>"; };
+		9A0F71061E110D33002645D6 /* libgdbm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgdbm.a; sourceTree = "<group>"; };
+		9A0F71071E110D33002645D6 /* libgdbm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgdbm.4.dylib; sourceTree = "<group>"; };
+		9A0F71081E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71091E110D33002645D6 /* libgdk_pixbuf-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgdk_pixbuf-2.0.a"; sourceTree = "<group>"; };
+		9A0F710A1E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F710B1E110D33002645D6 /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F710C1E110D33002645D6 /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F710D1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk-quartz-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F710E1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgdk-quartz-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F710F1E110D33002645D6 /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgio-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71101E110D33002645D6 /* libgio-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgio-2.0.a"; sourceTree = "<group>"; };
+		9A0F71111E110D33002645D6 /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgio-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71121E110D33002645D6 /* libgirepository-1.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgirepository-1.0.1.dylib"; sourceTree = "<group>"; };
+		9A0F71131E110D33002645D6 /* libgirepository-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgirepository-1.0.a"; sourceTree = "<group>"; };
+		9A0F71141E110D33002645D6 /* libgirepository-1.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgirepository-1.0.1.dylib"; sourceTree = "<group>"; };
+		9A0F71151E110D33002645D6 /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71161E110D33002645D6 /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libglib-2.0.a"; sourceTree = "<group>"; };
+		9A0F71171E110D33002645D6 /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71181E110D33002645D6 /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71191E110D33002645D6 /* libgmodule-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmodule-2.0.a"; sourceTree = "<group>"; };
+		9A0F711A1E110D33002645D6 /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F711B1E110D33002645D6 /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F711C1E110D33002645D6 /* libgobject-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgobject-2.0.a"; sourceTree = "<group>"; };
+		9A0F711D1E110D33002645D6 /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F711E1E110D33002645D6 /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgthread-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F711F1E110D33002645D6 /* libgthread-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgthread-2.0.a"; sourceTree = "<group>"; };
+		9A0F71201E110D33002645D6 /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgthread-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71211E110D33002645D6 /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtk-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F71221E110D33002645D6 /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtk-3.0.dylib"; sourceTree = "<group>"; };
+		9A0F71231E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtk-quartz-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71241E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtk-quartz-2.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71251E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtkmacintegration-gtk2.2.dylib"; sourceTree = "<group>"; };
+		9A0F71261E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtkmacintegration-gtk2.2.dylib"; sourceTree = "<group>"; };
+		9A0F71271E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtkmacintegration-gtk3.2.dylib"; sourceTree = "<group>"; };
+		9A0F71281E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtkmacintegration-gtk3.2.dylib"; sourceTree = "<group>"; };
+		9A0F71291E110D33002645D6 /* libgtksourceview-3.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtksourceview-3.0.1.dylib"; sourceTree = "<group>"; };
+		9A0F712A1E110D33002645D6 /* libgtksourceview-3.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgtksourceview-3.0.1.dylib"; sourceTree = "<group>"; };
+		9A0F712B1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libharfbuzz-gobject.0.dylib"; sourceTree = "<group>"; };
+		9A0F712C1E110D33002645D6 /* libharfbuzz-gobject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libharfbuzz-gobject.a"; sourceTree = "<group>"; };
+		9A0F712D1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libharfbuzz-gobject.0.dylib"; sourceTree = "<group>"; };
+		9A0F712E1E110D33002645D6 /* libharfbuzz-icu.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libharfbuzz-icu.0.dylib"; sourceTree = "<group>"; };
+		9A0F712F1E110D33002645D6 /* libharfbuzz-icu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libharfbuzz-icu.a"; sourceTree = "<group>"; };
+		9A0F71301E110D33002645D6 /* libharfbuzz-icu.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libharfbuzz-icu.0.dylib"; sourceTree = "<group>"; };
+		9A0F71311E110D33002645D6 /* libharfbuzz.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libharfbuzz.0.dylib; sourceTree = "<group>"; };
+		9A0F71321E110D33002645D6 /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.a; sourceTree = "<group>"; };
+		9A0F71331E110D33002645D6 /* libharfbuzz.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libharfbuzz.0.dylib; sourceTree = "<group>"; };
+		9A0F71341E110D33002645D6 /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjpeg.8.dylib; sourceTree = "<group>"; };
+		9A0F71351E110D33002645D6 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		9A0F71361E110D33002645D6 /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjpeg.8.dylib; sourceTree = "<group>"; };
+		9A0F71371E110D33002645D6 /* libltdl.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libltdl.7.dylib; sourceTree = "<group>"; };
+		9A0F71381E110D33002645D6 /* libltdl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libltdl.a; sourceTree = "<group>"; };
+		9A0F71391E110D33002645D6 /* libltdl.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libltdl.7.dylib; sourceTree = "<group>"; };
+		9A0F713A1E110D33002645D6 /* liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblzma.5.dylib; sourceTree = "<group>"; };
+		9A0F713B1E110D33002645D6 /* liblzma.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblzma.a; sourceTree = "<group>"; };
+		9A0F713C1E110D33002645D6 /* liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblzma.5.dylib; sourceTree = "<group>"; };
+		9A0F713D1E110D33002645D6 /* libmagic.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmagic.1.dylib; sourceTree = "<group>"; };
+		9A0F713E1E110D33002645D6 /* libmagic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmagic.a; sourceTree = "<group>"; };
+		9A0F713F1E110D33002645D6 /* libmagic.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmagic.1.dylib; sourceTree = "<group>"; };
+		9A0F71401E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71411E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71421E110D33002645D6 /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71431E110D33002645D6 /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71441E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71451E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71461E110D33002645D6 /* libopencv_flann.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71471E110D33002645D6 /* libopencv_flann.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_flann.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71481E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71491E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714A1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgcodecs.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714B1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgcodecs.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714C1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714D1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714E1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ml.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F714F1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_ml.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71501E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71511E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71521E110D33002645D6 /* libopencv_photo.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_photo.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71531E110D33002645D6 /* libopencv_photo.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_photo.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71541E110D33002645D6 /* libopencv_shape.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_shape.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71551E110D33002645D6 /* libopencv_shape.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_shape.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71561E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71571E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71581E110D33002645D6 /* libopencv_superres.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71591E110D33002645D6 /* libopencv_superres.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_superres.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715A1E110D33002645D6 /* libopencv_video.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715B1E110D33002645D6 /* libopencv_video.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715C1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videoio.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715D1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videoio.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715E1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F715F1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.3.2.0.dylib; sourceTree = "<group>"; };
+		9A0F71601E110D33002645D6 /* libosxfuse_i32.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i32.2.dylib; sourceTree = "<group>"; };
+		9A0F71611E110D33002645D6 /* libosxfuse_i32.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libosxfuse_i32.la; sourceTree = "<group>"; };
+		9A0F71621E110D33002645D6 /* libosxfuse_i64.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i64.2.dylib; sourceTree = "<group>"; };
+		9A0F71631E110D33002645D6 /* libosxfuse_i64.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libosxfuse_i64.la; sourceTree = "<group>"; };
+		9A0F71641E110D33002645D6 /* libosxfuse_i64.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i64.2.dylib; sourceTree = "<group>"; };
+		9A0F71651E110D33002645D6 /* libosxfuse_i64.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libosxfuse_i64.2.dylib; sourceTree = "<group>"; };
+		9A0F71661E110D33002645D6 /* libosxfuse_i64.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libosxfuse_i64.la; sourceTree = "<group>"; };
+		9A0F71671E110D33002645D6 /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpango-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71681E110D33002645D6 /* libpango-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpango-1.0.a"; sourceTree = "<group>"; };
+		9A0F71691E110D33002645D6 /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpango-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F716A1E110D33002645D6 /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F716B1E110D33002645D6 /* libpangocairo-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpangocairo-1.0.a"; sourceTree = "<group>"; };
+		9A0F716C1E110D33002645D6 /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F716D1E110D33002645D6 /* libpangoft2-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangoft2-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F716E1E110D33002645D6 /* libpangoft2-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpangoft2-1.0.a"; sourceTree = "<group>"; };
+		9A0F716F1E110D33002645D6 /* libpangoft2-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangoft2-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71701E110D33002645D6 /* libpcre.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre.1.dylib; sourceTree = "<group>"; };
+		9A0F71711E110D33002645D6 /* libpcre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcre.a; sourceTree = "<group>"; };
+		9A0F71721E110D33002645D6 /* libpcre.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre.1.dylib; sourceTree = "<group>"; };
+		9A0F71731E110D33002645D6 /* libpcre16.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre16.0.dylib; sourceTree = "<group>"; };
+		9A0F71741E110D33002645D6 /* libpcre16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcre16.a; sourceTree = "<group>"; };
+		9A0F71751E110D33002645D6 /* libpcre16.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre16.0.dylib; sourceTree = "<group>"; };
+		9A0F71761E110D33002645D6 /* libpcre32.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre32.0.dylib; sourceTree = "<group>"; };
+		9A0F71771E110D33002645D6 /* libpcre32.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcre32.a; sourceTree = "<group>"; };
+		9A0F71781E110D33002645D6 /* libpcre32.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcre32.0.dylib; sourceTree = "<group>"; };
+		9A0F71791E110D33002645D6 /* libpcrecpp.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcrecpp.0.dylib; sourceTree = "<group>"; };
+		9A0F717A1E110D33002645D6 /* libpcrecpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcrecpp.a; sourceTree = "<group>"; };
+		9A0F717B1E110D33002645D6 /* libpcrecpp.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcrecpp.0.dylib; sourceTree = "<group>"; };
+		9A0F717C1E110D33002645D6 /* libpcreposix.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcreposix.0.dylib; sourceTree = "<group>"; };
+		9A0F717D1E110D33002645D6 /* libpcreposix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcreposix.a; sourceTree = "<group>"; };
+		9A0F717E1E110D33002645D6 /* libpcreposix.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpcreposix.0.dylib; sourceTree = "<group>"; };
+		9A0F717F1E110D33002645D6 /* libpeas-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpeas-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71801E110D33002645D6 /* libpeas-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpeas-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71811E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpeas-gtk-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71821E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpeas-gtk-1.0.0.dylib"; sourceTree = "<group>"; };
+		9A0F71831E110D33002645D6 /* libpgcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpgcommon.a; sourceTree = "<group>"; };
+		9A0F71841E110D33002645D6 /* libpgport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpgport.a; sourceTree = "<group>"; };
+		9A0F71851E110D33002645D6 /* libpgtypes.3.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpgtypes.3.5.dylib; sourceTree = "<group>"; };
+		9A0F71861E110D33002645D6 /* libpgtypes.3.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpgtypes.3.5.dylib; sourceTree = "<group>"; };
+		9A0F71871E110D33002645D6 /* libpgtypes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpgtypes.a; sourceTree = "<group>"; };
+		9A0F71881E110D33002645D6 /* libpgtypes.3.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpgtypes.3.5.dylib; sourceTree = "<group>"; };
+		9A0F71891E110D33002645D6 /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpixman-1.0.dylib"; sourceTree = "<group>"; };
+		9A0F718A1E110D33002645D6 /* libpixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpixman-1.a"; sourceTree = "<group>"; };
+		9A0F718B1E110D33002645D6 /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpixman-1.0.dylib"; sourceTree = "<group>"; };
+		9A0F718C1E110D33002645D6 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng16.a; sourceTree = "<group>"; };
+		9A0F718D1E110D33002645D6 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.16.dylib; sourceTree = "<group>"; };
+		9A0F718E1E110D33002645D6 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.16.dylib; sourceTree = "<group>"; };
+		9A0F718F1E110D33002645D6 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng16.a; sourceTree = "<group>"; };
+		9A0F71901E110D33002645D6 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.16.dylib; sourceTree = "<group>"; };
+		9A0F71911E110D33002645D6 /* libpopt.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpopt.0.dylib; sourceTree = "<group>"; };
+		9A0F71921E110D33002645D6 /* libpopt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpopt.a; sourceTree = "<group>"; };
+		9A0F71931E110D33002645D6 /* libpopt.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpopt.0.dylib; sourceTree = "<group>"; };
+		9A0F71941E110D33002645D6 /* libpq.5.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.5.7.dylib; sourceTree = "<group>"; };
+		9A0F71951E110D33002645D6 /* libpq.5.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.5.7.dylib; sourceTree = "<group>"; };
+		9A0F71961E110D33002645D6 /* libpq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpq.a; sourceTree = "<group>"; };
+		9A0F71971E110D33002645D6 /* libpq.5.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.5.7.dylib; sourceTree = "<group>"; };
+		9A0F71981E110D33002645D6 /* libpspell.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpspell.15.dylib; sourceTree = "<group>"; };
+		9A0F71991E110D33002645D6 /* libpspell.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpspell.15.dylib; sourceTree = "<group>"; };
+		9A0F719A1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpyglib-2.0-python.0.dylib"; sourceTree = "<group>"; };
+		9A0F719B1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpyglib-2.0-python.0.dylib"; sourceTree = "<group>"; };
+		9A0F719C1E110D33002645D6 /* librpm-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpm-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F719D1E110D33002645D6 /* librpm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpm.a; sourceTree = "<group>"; };
+		9A0F719E1E110D33002645D6 /* librpm-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpm-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F719F1E110D33002645D6 /* librpmbuild-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmbuild-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A01E110D33002645D6 /* librpmbuild.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpmbuild.a; sourceTree = "<group>"; };
+		9A0F71A11E110D33002645D6 /* librpmbuild-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmbuild-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A21E110D33002645D6 /* librpmconstant-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmconstant-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A31E110D33002645D6 /* librpmconstant.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpmconstant.a; sourceTree = "<group>"; };
+		9A0F71A41E110D33002645D6 /* librpmconstant-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmconstant-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A51E110D33002645D6 /* librpmdb-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmdb-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A61E110D33002645D6 /* librpmdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpmdb.a; sourceTree = "<group>"; };
+		9A0F71A71E110D33002645D6 /* librpmdb-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmdb-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A81E110D33002645D6 /* librpmio-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmio-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71A91E110D33002645D6 /* librpmio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpmio.a; sourceTree = "<group>"; };
+		9A0F71AA1E110D33002645D6 /* librpmio-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmio-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71AB1E110D33002645D6 /* librpmmisc-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmmisc-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71AC1E110D33002645D6 /* librpmmisc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librpmmisc.a; sourceTree = "<group>"; };
+		9A0F71AD1E110D33002645D6 /* librpmmisc-5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librpmmisc-5.4.dylib"; sourceTree = "<group>"; };
+		9A0F71AE1E110D33002645D6 /* librsvg-2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librsvg-2.2.dylib"; sourceTree = "<group>"; };
+		9A0F71AF1E110D33002645D6 /* librsvg-2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "librsvg-2.a"; sourceTree = "<group>"; };
+		9A0F71B01E110D33002645D6 /* librsvg-2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "librsvg-2.2.dylib"; sourceTree = "<group>"; };
+		9A0F71B11E110D33002645D6 /* libtasn1.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtasn1.6.dylib; sourceTree = "<group>"; };
+		9A0F71B21E110D33002645D6 /* libtasn1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtasn1.a; sourceTree = "<group>"; };
+		9A0F71B31E110D33002645D6 /* libtasn1.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtasn1.6.dylib; sourceTree = "<group>"; };
+		9A0F71B41E110D33002645D6 /* libtiff.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtiff.5.dylib; sourceTree = "<group>"; };
+		9A0F71B51E110D33002645D6 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
+		9A0F71B61E110D33002645D6 /* libtiff.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtiff.5.dylib; sourceTree = "<group>"; };
+		9A0F71B71E110D33002645D6 /* libtiffxx.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtiffxx.5.dylib; sourceTree = "<group>"; };
+		9A0F71B81E110D33002645D6 /* libtiffxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiffxx.a; sourceTree = "<group>"; };
+		9A0F71B91E110D33002645D6 /* libtiffxx.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtiffxx.5.dylib; sourceTree = "<group>"; };
+		9A0F71BA1E110D33002645D6 /* libuuid.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libuuid.16.dylib; sourceTree = "<group>"; };
+		9A0F71BB1E110D33002645D6 /* libuuid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuuid.a; sourceTree = "<group>"; };
+		9A0F71BC1E110D33002645D6 /* libuuid.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libuuid.16.dylib; sourceTree = "<group>"; };
+		9A0F71BD1E110D33002645D6 /* libyara.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyara.a; sourceTree = "<group>"; };
+		9A0F71BE1E110D33002645D6 /* libyara.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libyara.3.dylib; sourceTree = "<group>"; };
+		9A0F71BF1E110D33002645D6 /* libyara.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libyara.la; sourceTree = "<group>"; };
+		9ACFCB0B1E1107E300883AA7 /* opencv_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opencv_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACFCB0E1E1107E300883AA7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ACFCB081E1107E300883AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0F72B11E110D33002645D6 /* librpmdb-5.4.dylib in Frameworks */,
+				9A0F72011E110D33002645D6 /* libevent_openssl-2.0.5.dylib in Frameworks */,
+				9A0F71E61E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */,
+				9A0F729C1E110D33002645D6 /* libpng16.16.dylib in Frameworks */,
+				9A0F71C71E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */,
+				9A0F72461E110D33002645D6 /* libltdl.7.dylib in Frameworks */,
+				9A0F72C31E110D33002645D6 /* libtiffxx.5.dylib in Frameworks */,
+				9A0F72AB1E110D33002645D6 /* librpmbuild-5.4.dylib in Frameworks */,
+				9A0F72C01E110D33002645D6 /* libtiff.5.dylib in Frameworks */,
+				9A0F71FD1E110D33002645D6 /* libevent_core-2.0.5.dylib in Frameworks */,
+				9A0F72721E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */,
+				9A0F720C1E110D33002645D6 /* libfontconfig.1.dylib in Frameworks */,
+				9A0F71DB1E110D33002645D6 /* libcairo-script-interpreter.2.dylib in Frameworks */,
+				9A0F72611E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */,
+				9A0F721C1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib in Frameworks */,
+				9A0F725C1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */,
+				9A0F721D1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib in Frameworks */,
+				9A0F71F61E110D33002645D6 /* libenchant.1.dylib in Frameworks */,
+				9A0F72081E110D33002645D6 /* libevent.a in Frameworks */,
+				9A0F71C61E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */,
+				9A0F728E1E110D33002645D6 /* libpeas-gtk-1.0.0.dylib in Frameworks */,
+				9A0F72A81E110D33002645D6 /* librpm-5.4.dylib in Frameworks */,
+				9A0F72C21E110D33002645D6 /* libtiff.5.dylib in Frameworks */,
+				9A0F72B31E110D33002645D6 /* librpmdb-5.4.dylib in Frameworks */,
+				9A0F729E1E110D33002645D6 /* libpopt.a in Frameworks */,
+				9A0F722D1E110D33002645D6 /* libgthread-2.0.0.dylib in Frameworks */,
+				9A0F72911E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */,
+				9A0F72021E110D33002645D6 /* libevent_openssl.a in Frameworks */,
+				9A0F725E1E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */,
+				9A0F72A71E110D33002645D6 /* libpyglib-2.0-python.0.dylib in Frameworks */,
+				9A0F72B51E110D33002645D6 /* librpmio.a in Frameworks */,
+				9A0F723E1E110D33002645D6 /* libharfbuzz-icu.a in Frameworks */,
+				9A0F71FE1E110D33002645D6 /* libevent_extra-2.0.5.dylib in Frameworks */,
+				9A0F72841E110D33002645D6 /* libpcre32.0.dylib in Frameworks */,
+				9A0F72181E110D33002645D6 /* libgdk_pixbuf-2.0.a in Frameworks */,
+				9A0F72161E110D33002645D6 /* libgdbm.4.dylib in Frameworks */,
+				9A0F72C51E110D33002645D6 /* libtiffxx.5.dylib in Frameworks */,
+				9A0F71CB1E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */,
+				9A0F726B1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */,
+				9A0F72631E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */,
+				9A0F723C1E110D33002645D6 /* libharfbuzz-gobject.0.dylib in Frameworks */,
+				9A0F72541E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */,
+				9A0F72CA1E110D33002645D6 /* libyara.3.dylib in Frameworks */,
+				9A0F72031E110D33002645D6 /* libevent_openssl-2.0.5.dylib in Frameworks */,
+				9A0F72A31E110D33002645D6 /* libpq.5.7.dylib in Frameworks */,
+				9A0F71D11E110D33002645D6 /* libosxfuse_i32.2.dylib in Frameworks */,
+				9A0F727C1E110D33002645D6 /* libpcre.1.dylib in Frameworks */,
+				9A0F71D41E110D33002645D6 /* libaspell.15.dylib in Frameworks */,
+				9A0F71D71E110D33002645D6 /* libatk-1.0.0.dylib in Frameworks */,
+				9A0F72441E110D33002645D6 /* libjpeg.a in Frameworks */,
+				9A0F72091E110D33002645D6 /* libevent-2.0.5.dylib in Frameworks */,
+				9A0F728B1E110D33002645D6 /* libpeas-1.0.0.dylib in Frameworks */,
+				9A0F72761E110D33002645D6 /* libpangocairo-1.0.0.dylib in Frameworks */,
+				9A0F72401E110D33002645D6 /* libharfbuzz.0.dylib in Frameworks */,
+				9A0F71CC1E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */,
+				9A0F71F51E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */,
+				9A0F72211E110D33002645D6 /* libgirepository-1.0.1.dylib in Frameworks */,
+				9A0F72851E110D33002645D6 /* libpcrecpp.0.dylib in Frameworks */,
+				9A0F72531E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */,
+				9A0F71EC1E110D33002645D6 /* libdb.a in Frameworks */,
+				9A0F72C41E110D33002645D6 /* libtiffxx.a in Frameworks */,
+				9A0F72801E110D33002645D6 /* libpcre16.a in Frameworks */,
+				9A0F72951E110D33002645D6 /* libpixman-1.0.dylib in Frameworks */,
+				9A0F72301E110D33002645D6 /* libgtk-3.0.dylib in Frameworks */,
+				9A0F72321E110D33002645D6 /* libgtk-quartz-2.0.0.dylib in Frameworks */,
+				9A0F72AA1E110D33002645D6 /* librpm-5.4.dylib in Frameworks */,
+				9A0F71ED1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */,
+				9A0F72BE1E110D33002645D6 /* libtasn1.a in Frameworks */,
+				9A0F71E91E110D33002645D6 /* libdb-6.1.a in Frameworks */,
+				9A0F722C1E110D33002645D6 /* libgobject-2.0.0.dylib in Frameworks */,
+				9A0F72061E110D33002645D6 /* libevent_pthreads-2.0.5.dylib in Frameworks */,
+				9A0F724D1E110D33002645D6 /* libmagic.a in Frameworks */,
+				9A0F71E21E110D33002645D6 /* libcroco-0.6.a in Frameworks */,
+				9A0F72C11E110D33002645D6 /* libtiff.a in Frameworks */,
+				9A0F72A91E110D33002645D6 /* librpm.a in Frameworks */,
+				9A0F72861E110D33002645D6 /* libpcrecpp.a in Frameworks */,
+				9A0F71EE1E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */,
+				9A0F728C1E110D33002645D6 /* libpeas-1.0.0.dylib in Frameworks */,
+				9A0F72BC1E110D33002645D6 /* librsvg-2.2.dylib in Frameworks */,
+				9A0F72B41E110D33002645D6 /* librpmio-5.4.dylib in Frameworks */,
+				9A0F72871E110D33002645D6 /* libpcrecpp.0.dylib in Frameworks */,
+				9A0F72141E110D33002645D6 /* libgdbm.4.dylib in Frameworks */,
+				9A0F71D51E110D33002645D6 /* libaspell.15.dylib in Frameworks */,
+				9A0F71FC1E110D33002645D6 /* libevent_core.a in Frameworks */,
+				9A0F72051E110D33002645D6 /* libevent_pthreads.a in Frameworks */,
+				9A0F71D81E110D33002645D6 /* libcairo-gobject.2.dylib in Frameworks */,
+				9A0F727E1E110D33002645D6 /* libpcre.1.dylib in Frameworks */,
+				9A0F71C41E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */,
+				9A0F72701E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */,
+				9A0F71F71E110D33002645D6 /* libenchant.a in Frameworks */,
+				9A0F728F1E110D33002645D6 /* libpgcommon.a in Frameworks */,
+				9A0F720B1E110D33002645D6 /* libfontconfig.a in Frameworks */,
+				9A0F72A21E110D33002645D6 /* libpq.a in Frameworks */,
+				9A0F72B61E110D33002645D6 /* librpmio-5.4.dylib in Frameworks */,
+				9A0F729F1E110D33002645D6 /* libpopt.0.dylib in Frameworks */,
+				9A0F72551E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */,
+				9A0F725F1E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */,
+				9A0F72521E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */,
+				9A0F72151E110D33002645D6 /* libgdbm.a in Frameworks */,
+				9A0F72AD1E110D33002645D6 /* librpmbuild-5.4.dylib in Frameworks */,
+				9A0F724F1E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */,
+				9A0F71D31E110D33002645D6 /* libyara.3.dylib in Frameworks */,
+				9A0F72501E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */,
+				9A0F72941E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */,
+				9A0F726E1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */,
+				9A0F729D1E110D33002645D6 /* libpopt.0.dylib in Frameworks */,
+				9A0F71DC1E110D33002645D6 /* libcairo-script-interpreter.a in Frameworks */,
+				9A0F72621E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */,
+				9A0F71FA1E110D33002645D6 /* libepoxy.0.dylib in Frameworks */,
+				9A0F72451E110D33002645D6 /* libjpeg.8.dylib in Frameworks */,
+				9A0F72311E110D33002645D6 /* libgtk-3.0.dylib in Frameworks */,
+				9A0F72691E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */,
+				9A0F725B1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib in Frameworks */,
+				9A0F728D1E110D33002645D6 /* libpeas-gtk-1.0.0.dylib in Frameworks */,
+				9A0F72831E110D33002645D6 /* libpcre32.a in Frameworks */,
+				9A0F72131E110D33002645D6 /* libgailutil.18.dylib in Frameworks */,
+				9A0F72231E110D33002645D6 /* libgirepository-1.0.1.dylib in Frameworks */,
+				9A0F726C1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */,
+				9A0F71C91E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */,
+				9A0F71DE1E110D33002645D6 /* libcairo.2.dylib in Frameworks */,
+				9A0F72421E110D33002645D6 /* libharfbuzz.0.dylib in Frameworks */,
+				9A0F72B01E110D33002645D6 /* librpmconstant-5.4.dylib in Frameworks */,
+				9A0F72BA1E110D33002645D6 /* librsvg-2.2.dylib in Frameworks */,
+				9A0F71DA1E110D33002645D6 /* libcairo-gobject.2.dylib in Frameworks */,
+				9A0F72491E110D33002645D6 /* liblzma.5.dylib in Frameworks */,
+				9A0F72781E110D33002645D6 /* libpangocairo-1.0.0.dylib in Frameworks */,
+				9A0F72201E110D33002645D6 /* libgio-2.0.0.dylib in Frameworks */,
+				9A0F72571E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */,
+				9A0F71C81E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */,
+				9A0F722B1E110D33002645D6 /* libgobject-2.0.a in Frameworks */,
+				9A0F72731E110D33002645D6 /* libpango-1.0.0.dylib in Frameworks */,
+				9A0F724B1E110D33002645D6 /* liblzma.5.dylib in Frameworks */,
+				9A0F72A41E110D33002645D6 /* libpspell.15.dylib in Frameworks */,
+				9A0F721F1E110D33002645D6 /* libgio-2.0.a in Frameworks */,
+				9A0F71F01E110D33002645D6 /* libecpg_compat.a in Frameworks */,
+				9A0F71EB1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */,
+				9A0F726A1E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */,
+				9A0F71EF1E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */,
+				9A0F724C1E110D33002645D6 /* libmagic.1.dylib in Frameworks */,
+				9A0F71E51E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */,
+				9A0F71E01E110D33002645D6 /* libcairo.2.dylib in Frameworks */,
+				9A0F72651E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */,
+				9A0F72881E110D33002645D6 /* libpcreposix.0.dylib in Frameworks */,
+				9A0F72AF1E110D33002645D6 /* librpmconstant.a in Frameworks */,
+				9A0F72771E110D33002645D6 /* libpangocairo-1.0.a in Frameworks */,
+				9A0F71C21E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */,
+				9A0F721A1E110D33002645D6 /* libgdk-3.0.dylib in Frameworks */,
+				9A0F72971E110D33002645D6 /* libpixman-1.0.dylib in Frameworks */,
+				9A0F72981E110D33002645D6 /* libpng16.a in Frameworks */,
+				9A0F72331E110D33002645D6 /* libgtk-quartz-2.0.0.dylib in Frameworks */,
+				9A0F71F31E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */,
+				9A0F72811E110D33002645D6 /* libpcre16.0.dylib in Frameworks */,
+				9A0F71CA1E110D33002645D6 /* libopencv_photo.3.2.0.dylib in Frameworks */,
+				9A0F71F91E110D33002645D6 /* libepoxy.0.dylib in Frameworks */,
+				9A0F72581E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */,
+				9A0F71FB1E110D33002645D6 /* libevent_core-2.0.5.dylib in Frameworks */,
+				9A0F71F41E110D33002645D6 /* libecpg.a in Frameworks */,
+				9A0F72C91E110D33002645D6 /* libyara.a in Frameworks */,
+				9A0F723D1E110D33002645D6 /* libharfbuzz-icu.0.dylib in Frameworks */,
+				9A0F723F1E110D33002645D6 /* libharfbuzz-icu.0.dylib in Frameworks */,
+				9A0F72AE1E110D33002645D6 /* librpmconstant-5.4.dylib in Frameworks */,
+				9A0F71CD1E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */,
+				9A0F72591E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */,
+				9A0F724A1E110D33002645D6 /* liblzma.a in Frameworks */,
+				9A0F72471E110D33002645D6 /* libltdl.a in Frameworks */,
+				9A0F71E11E110D33002645D6 /* libcroco-0.6.3.dylib in Frameworks */,
+				9A0F720F1E110D33002645D6 /* libfreetype.6.dylib in Frameworks */,
+				9A0F72901E110D33002645D6 /* libpgport.a in Frameworks */,
+				9A0F729B1E110D33002645D6 /* libpng16.a in Frameworks */,
+				9A0F72751E110D33002645D6 /* libpango-1.0.0.dylib in Frameworks */,
+				9A0F72111E110D33002645D6 /* libgailutil-3.0.dylib in Frameworks */,
+				9A0F72641E110D33002645D6 /* libopencv_shape.3.2.0.dylib in Frameworks */,
+				9A0F71C01E110D33002645D6 /* libAliST.dylib in Frameworks */,
+				9A0F72891E110D33002645D6 /* libpcreposix.a in Frameworks */,
+				9A0F727F1E110D33002645D6 /* libpcre16.0.dylib in Frameworks */,
+				9A0F724E1E110D33002645D6 /* libmagic.1.dylib in Frameworks */,
+				9A0F72561E110D33002645D6 /* libopencv_flann.3.2.0.dylib in Frameworks */,
+				9A0F72A61E110D33002645D6 /* libpyglib-2.0-python.0.dylib in Frameworks */,
+				9A0F72351E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib in Frameworks */,
+				9A0F72991E110D33002645D6 /* libpng16.16.dylib in Frameworks */,
+				9A0F72961E110D33002645D6 /* libpixman-1.a in Frameworks */,
+				9A0F72241E110D33002645D6 /* libglib-2.0.0.dylib in Frameworks */,
+				9A0F721B1E110D33002645D6 /* libgdk-3.0.dylib in Frameworks */,
+				9A0F725D1E110D33002645D6 /* libopencv_ml.3.2.0.dylib in Frameworks */,
+				9A0F72601E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib in Frameworks */,
+				9A0F71D61E110D33002645D6 /* libatk-1.0.0.dylib in Frameworks */,
+				9A0F72221E110D33002645D6 /* libgirepository-1.0.a in Frameworks */,
+				9A0F72281E110D33002645D6 /* libgmodule-2.0.a in Frameworks */,
+				9A0F71CE1E110D33002645D6 /* libopencv_video.3.2.0.dylib in Frameworks */,
+				9A0F72101E110D33002645D6 /* libgailutil-3.0.dylib in Frameworks */,
+				9A0F723B1E110D33002645D6 /* libharfbuzz-gobject.a in Frameworks */,
+				9A0F72A51E110D33002645D6 /* libpspell.15.dylib in Frameworks */,
+				9A0F725A1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib in Frameworks */,
+				9A0F72791E110D33002645D6 /* libpangoft2-1.0.0.dylib in Frameworks */,
+				9A0F72671E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */,
+				9A0F72A01E110D33002645D6 /* libpq.5.7.dylib in Frameworks */,
+				9A0F72BB1E110D33002645D6 /* librsvg-2.a in Frameworks */,
+				9A0F71D91E110D33002645D6 /* libcairo-gobject.a in Frameworks */,
+				9A0F727D1E110D33002645D6 /* libpcre.a in Frameworks */,
+				9A0F72291E110D33002645D6 /* libgmodule-2.0.0.dylib in Frameworks */,
+				9A0F72041E110D33002645D6 /* libevent_pthreads-2.0.5.dylib in Frameworks */,
+				9A0F722E1E110D33002645D6 /* libgthread-2.0.a in Frameworks */,
+				9A0F72381E110D33002645D6 /* libgtksourceview-3.0.1.dylib in Frameworks */,
+				9A0F728A1E110D33002645D6 /* libpcreposix.0.dylib in Frameworks */,
+				9A0F71C31E110D33002645D6 /* libopencv_features2d.3.2.0.dylib in Frameworks */,
+				9A0F71D21E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */,
+				9A0F71D01E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */,
+				9A0F72B21E110D33002645D6 /* librpmdb.a in Frameworks */,
+				9A0F72B71E110D33002645D6 /* librpmmisc-5.4.dylib in Frameworks */,
+				9A0F72371E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib in Frameworks */,
+				9A0F720D1E110D33002645D6 /* libfreetype.6.dylib in Frameworks */,
+				9A0F721E1E110D33002645D6 /* libgio-2.0.0.dylib in Frameworks */,
+				9A0F71F21E110D33002645D6 /* libecpg.6.6.dylib in Frameworks */,
+				9A0F71C51E110D33002645D6 /* libopencv_highgui.3.2.0.dylib in Frameworks */,
+				9A0F72361E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib in Frameworks */,
+				9A0F72481E110D33002645D6 /* libltdl.7.dylib in Frameworks */,
+				9A0F72A11E110D33002645D6 /* libpq.5.7.dylib in Frameworks */,
+				9A0F729A1E110D33002645D6 /* libpng16.16.dylib in Frameworks */,
+				9A0F72AC1E110D33002645D6 /* librpmbuild.a in Frameworks */,
+				9A0F72251E110D33002645D6 /* libglib-2.0.a in Frameworks */,
+				9A0F72BF1E110D33002645D6 /* libtasn1.6.dylib in Frameworks */,
+				9A0F722F1E110D33002645D6 /* libgthread-2.0.0.dylib in Frameworks */,
+				9A0F723A1E110D33002645D6 /* libharfbuzz-gobject.0.dylib in Frameworks */,
+				9A0F71E71E110D33002645D6 /* libdb_cxx.a in Frameworks */,
+				9A0F72341E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib in Frameworks */,
+				9A0F71E41E110D33002645D6 /* libdb_cxx-6.1.a in Frameworks */,
+				9A0F72171E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib in Frameworks */,
+				9A0F720E1E110D33002645D6 /* libfreetype.a in Frameworks */,
+				9A0F72C61E110D33002645D6 /* libuuid.16.dylib in Frameworks */,
+				9A0F722A1E110D33002645D6 /* libgobject-2.0.0.dylib in Frameworks */,
+				9A0F727B1E110D33002645D6 /* libpangoft2-1.0.0.dylib in Frameworks */,
+				9A0F720A1E110D33002645D6 /* libfontconfig.1.dylib in Frameworks */,
+				9A0F71E81E110D33002645D6 /* libdb_cxx-6.1.dylib in Frameworks */,
+				9A0F71EA1E110D33002645D6 /* libdb-6.1.dylib in Frameworks */,
+				9A0F71CF1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib in Frameworks */,
+				9A0F72BD1E110D33002645D6 /* libtasn1.6.dylib in Frameworks */,
+				9A0F71C11E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib in Frameworks */,
+				9A0F72661E110D33002645D6 /* libopencv_stitching.3.2.0.dylib in Frameworks */,
+				9A0F726D1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib in Frameworks */,
+				9A0F72001E110D33002645D6 /* libevent_extra-2.0.5.dylib in Frameworks */,
+				9A0F71F11E110D33002645D6 /* libecpg_compat.3.6.dylib in Frameworks */,
+				9A0F71FF1E110D33002645D6 /* libevent_extra.a in Frameworks */,
+				9A0F72411E110D33002645D6 /* libharfbuzz.a in Frameworks */,
+				9A0F72261E110D33002645D6 /* libglib-2.0.0.dylib in Frameworks */,
+				9A0F72711E110D33002645D6 /* libosxfuse_i64.2.dylib in Frameworks */,
+				9A0F727A1E110D33002645D6 /* libpangoft2-1.0.a in Frameworks */,
+				9A0F71E31E110D33002645D6 /* libcroco-0.6.3.dylib in Frameworks */,
+				9A0F72681E110D33002645D6 /* libopencv_superres.3.2.0.dylib in Frameworks */,
+				9A0F71DF1E110D33002645D6 /* libcairo.a in Frameworks */,
+				9A0F72B91E110D33002645D6 /* librpmmisc-5.4.dylib in Frameworks */,
+				9A0F72511E110D33002645D6 /* libopencv_core.3.2.0.dylib in Frameworks */,
+				9A0F71F81E110D33002645D6 /* libenchant.1.dylib in Frameworks */,
+				9A0F72391E110D33002645D6 /* libgtksourceview-3.0.1.dylib in Frameworks */,
+				9A0F72741E110D33002645D6 /* libpango-1.0.a in Frameworks */,
+				9A0F726F1E110D33002645D6 /* libosxfuse_i32.2.dylib in Frameworks */,
+				9A0F72191E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib in Frameworks */,
+				9A0F72C71E110D33002645D6 /* libuuid.a in Frameworks */,
+				9A0F72121E110D33002645D6 /* libgailutil.18.dylib in Frameworks */,
+				9A0F72C81E110D33002645D6 /* libuuid.16.dylib in Frameworks */,
+				9A0F72431E110D33002645D6 /* libjpeg.8.dylib in Frameworks */,
+				9A0F72821E110D33002645D6 /* libpcre32.0.dylib in Frameworks */,
+				9A0F72921E110D33002645D6 /* libpgtypes.3.5.dylib in Frameworks */,
+				9A0F71DD1E110D33002645D6 /* libcairo-script-interpreter.2.dylib in Frameworks */,
+				9A0F72071E110D33002645D6 /* libevent-2.0.5.dylib in Frameworks */,
+				9A0F72B81E110D33002645D6 /* librpmmisc.a in Frameworks */,
+				9A0F72931E110D33002645D6 /* libpgtypes.a in Frameworks */,
+				9A0F72271E110D33002645D6 /* libgmodule-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ACFCB021E1107E300883AA7 = {
+			isa = PBXGroup;
+			children = (
+				9A0F70B11E110D32002645D6 /* libAliST.dylib */,
+				9A0F70B21E110D32002645D6 /* libopencv_calib3d.3.2.0.dylib */,
+				9A0F70B31E110D32002645D6 /* libopencv_core.3.2.0.dylib */,
+				9A0F70B41E110D32002645D6 /* libopencv_features2d.3.2.0.dylib */,
+				9A0F70B51E110D32002645D6 /* libopencv_flann.3.2.0.dylib */,
+				9A0F70B61E110D32002645D6 /* libopencv_highgui.3.2.0.dylib */,
+				9A0F70B71E110D32002645D6 /* libopencv_imgcodecs.3.2.0.dylib */,
+				9A0F70B81E110D32002645D6 /* libopencv_imgproc.3.2.0.dylib */,
+				9A0F70B91E110D32002645D6 /* libopencv_ml.3.2.0.dylib */,
+				9A0F70BA1E110D32002645D6 /* libopencv_objdetect.3.2.0.dylib */,
+				9A0F70BB1E110D32002645D6 /* libopencv_photo.3.2.0.dylib */,
+				9A0F70BC1E110D32002645D6 /* libopencv_shape.3.2.0.dylib */,
+				9A0F70BD1E110D32002645D6 /* libopencv_stitching.3.2.0.dylib */,
+				9A0F70BE1E110D32002645D6 /* libopencv_superres.3.2.0.dylib */,
+				9A0F70BF1E110D32002645D6 /* libopencv_video.3.2.0.dylib */,
+				9A0F70C01E110D32002645D6 /* libopencv_videoio.3.2.0.dylib */,
+				9A0F70C11E110D32002645D6 /* libopencv_videostab.3.2.0.dylib */,
+				9A0F70C21E110D32002645D6 /* libosxfuse_i32.2.dylib */,
+				9A0F70C31E110D32002645D6 /* libosxfuse_i64.2.dylib */,
+				9A0F70C41E110D32002645D6 /* libyara.3.dylib */,
+				9A0F70C51E110D32002645D6 /* libaspell.15.dylib */,
+				9A0F70C61E110D32002645D6 /* libaspell.15.dylib */,
+				9A0F70C71E110D32002645D6 /* libatk-1.0.0.dylib */,
+				9A0F70C81E110D32002645D6 /* libatk-1.0.0.dylib */,
+				9A0F70C91E110D32002645D6 /* libcairo-gobject.2.dylib */,
+				9A0F70CA1E110D32002645D6 /* libcairo-gobject.a */,
+				9A0F70CB1E110D32002645D6 /* libcairo-gobject.2.dylib */,
+				9A0F70CC1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */,
+				9A0F70CD1E110D32002645D6 /* libcairo-script-interpreter.a */,
+				9A0F70CE1E110D32002645D6 /* libcairo-script-interpreter.2.dylib */,
+				9A0F70CF1E110D32002645D6 /* libcairo.2.dylib */,
+				9A0F70D01E110D32002645D6 /* libcairo.a */,
+				9A0F70D11E110D32002645D6 /* libcairo.2.dylib */,
+				9A0F70D21E110D32002645D6 /* libcroco-0.6.3.dylib */,
+				9A0F70D31E110D32002645D6 /* libcroco-0.6.a */,
+				9A0F70D41E110D32002645D6 /* libcroco-0.6.3.dylib */,
+				9A0F70D51E110D32002645D6 /* libdb_cxx-6.1.a */,
+				9A0F70D61E110D32002645D6 /* libdb_cxx-6.1.dylib */,
+				9A0F70D71E110D32002645D6 /* libdb_cxx-6.1.dylib */,
+				9A0F70D81E110D32002645D6 /* libdb_cxx.a */,
+				9A0F70D91E110D32002645D6 /* libdb_cxx-6.1.dylib */,
+				9A0F70DA1E110D32002645D6 /* libdb-6.1.a */,
+				9A0F70DB1E110D32002645D6 /* libdb-6.1.dylib */,
+				9A0F70DC1E110D32002645D6 /* libdb-6.1.dylib */,
+				9A0F70DD1E110D32002645D6 /* libdb.a */,
+				9A0F70DE1E110D32002645D6 /* libdb-6.1.dylib */,
+				9A0F70DF1E110D32002645D6 /* libecpg_compat.3.6.dylib */,
+				9A0F70E01E110D32002645D6 /* libecpg_compat.3.6.dylib */,
+				9A0F70E11E110D32002645D6 /* libecpg_compat.a */,
+				9A0F70E21E110D32002645D6 /* libecpg_compat.3.6.dylib */,
+				9A0F70E31E110D32002645D6 /* libecpg.6.6.dylib */,
+				9A0F70E41E110D32002645D6 /* libecpg.6.6.dylib */,
+				9A0F70E51E110D32002645D6 /* libecpg.a */,
+				9A0F70E61E110D32002645D6 /* libecpg.6.6.dylib */,
+				9A0F70E71E110D33002645D6 /* libenchant.1.dylib */,
+				9A0F70E81E110D33002645D6 /* libenchant.a */,
+				9A0F70E91E110D33002645D6 /* libenchant.1.dylib */,
+				9A0F70EA1E110D33002645D6 /* libepoxy.0.dylib */,
+				9A0F70EB1E110D33002645D6 /* libepoxy.0.dylib */,
+				9A0F70EC1E110D33002645D6 /* libevent_core-2.0.5.dylib */,
+				9A0F70ED1E110D33002645D6 /* libevent_core.a */,
+				9A0F70EE1E110D33002645D6 /* libevent_core-2.0.5.dylib */,
+				9A0F70EF1E110D33002645D6 /* libevent_extra-2.0.5.dylib */,
+				9A0F70F01E110D33002645D6 /* libevent_extra.a */,
+				9A0F70F11E110D33002645D6 /* libevent_extra-2.0.5.dylib */,
+				9A0F70F21E110D33002645D6 /* libevent_openssl-2.0.5.dylib */,
+				9A0F70F31E110D33002645D6 /* libevent_openssl.a */,
+				9A0F70F41E110D33002645D6 /* libevent_openssl-2.0.5.dylib */,
+				9A0F70F51E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */,
+				9A0F70F61E110D33002645D6 /* libevent_pthreads.a */,
+				9A0F70F71E110D33002645D6 /* libevent_pthreads-2.0.5.dylib */,
+				9A0F70F81E110D33002645D6 /* libevent-2.0.5.dylib */,
+				9A0F70F91E110D33002645D6 /* libevent.a */,
+				9A0F70FA1E110D33002645D6 /* libevent-2.0.5.dylib */,
+				9A0F70FB1E110D33002645D6 /* libfontconfig.1.dylib */,
+				9A0F70FC1E110D33002645D6 /* libfontconfig.a */,
+				9A0F70FD1E110D33002645D6 /* libfontconfig.1.dylib */,
+				9A0F70FE1E110D33002645D6 /* libfreetype.6.dylib */,
+				9A0F70FF1E110D33002645D6 /* libfreetype.a */,
+				9A0F71001E110D33002645D6 /* libfreetype.6.dylib */,
+				9A0F71011E110D33002645D6 /* libgailutil-3.0.dylib */,
+				9A0F71021E110D33002645D6 /* libgailutil-3.0.dylib */,
+				9A0F71031E110D33002645D6 /* libgailutil.18.dylib */,
+				9A0F71041E110D33002645D6 /* libgailutil.18.dylib */,
+				9A0F71051E110D33002645D6 /* libgdbm.4.dylib */,
+				9A0F71061E110D33002645D6 /* libgdbm.a */,
+				9A0F71071E110D33002645D6 /* libgdbm.4.dylib */,
+				9A0F71081E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */,
+				9A0F71091E110D33002645D6 /* libgdk_pixbuf-2.0.a */,
+				9A0F710A1E110D33002645D6 /* libgdk_pixbuf-2.0.0.dylib */,
+				9A0F710B1E110D33002645D6 /* libgdk-3.0.dylib */,
+				9A0F710C1E110D33002645D6 /* libgdk-3.0.dylib */,
+				9A0F710D1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */,
+				9A0F710E1E110D33002645D6 /* libgdk-quartz-2.0.0.dylib */,
+				9A0F710F1E110D33002645D6 /* libgio-2.0.0.dylib */,
+				9A0F71101E110D33002645D6 /* libgio-2.0.a */,
+				9A0F71111E110D33002645D6 /* libgio-2.0.0.dylib */,
+				9A0F71121E110D33002645D6 /* libgirepository-1.0.1.dylib */,
+				9A0F71131E110D33002645D6 /* libgirepository-1.0.a */,
+				9A0F71141E110D33002645D6 /* libgirepository-1.0.1.dylib */,
+				9A0F71151E110D33002645D6 /* libglib-2.0.0.dylib */,
+				9A0F71161E110D33002645D6 /* libglib-2.0.a */,
+				9A0F71171E110D33002645D6 /* libglib-2.0.0.dylib */,
+				9A0F71181E110D33002645D6 /* libgmodule-2.0.0.dylib */,
+				9A0F71191E110D33002645D6 /* libgmodule-2.0.a */,
+				9A0F711A1E110D33002645D6 /* libgmodule-2.0.0.dylib */,
+				9A0F711B1E110D33002645D6 /* libgobject-2.0.0.dylib */,
+				9A0F711C1E110D33002645D6 /* libgobject-2.0.a */,
+				9A0F711D1E110D33002645D6 /* libgobject-2.0.0.dylib */,
+				9A0F711E1E110D33002645D6 /* libgthread-2.0.0.dylib */,
+				9A0F711F1E110D33002645D6 /* libgthread-2.0.a */,
+				9A0F71201E110D33002645D6 /* libgthread-2.0.0.dylib */,
+				9A0F71211E110D33002645D6 /* libgtk-3.0.dylib */,
+				9A0F71221E110D33002645D6 /* libgtk-3.0.dylib */,
+				9A0F71231E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */,
+				9A0F71241E110D33002645D6 /* libgtk-quartz-2.0.0.dylib */,
+				9A0F71251E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */,
+				9A0F71261E110D33002645D6 /* libgtkmacintegration-gtk2.2.dylib */,
+				9A0F71271E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */,
+				9A0F71281E110D33002645D6 /* libgtkmacintegration-gtk3.2.dylib */,
+				9A0F71291E110D33002645D6 /* libgtksourceview-3.0.1.dylib */,
+				9A0F712A1E110D33002645D6 /* libgtksourceview-3.0.1.dylib */,
+				9A0F712B1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */,
+				9A0F712C1E110D33002645D6 /* libharfbuzz-gobject.a */,
+				9A0F712D1E110D33002645D6 /* libharfbuzz-gobject.0.dylib */,
+				9A0F712E1E110D33002645D6 /* libharfbuzz-icu.0.dylib */,
+				9A0F712F1E110D33002645D6 /* libharfbuzz-icu.a */,
+				9A0F71301E110D33002645D6 /* libharfbuzz-icu.0.dylib */,
+				9A0F71311E110D33002645D6 /* libharfbuzz.0.dylib */,
+				9A0F71321E110D33002645D6 /* libharfbuzz.a */,
+				9A0F71331E110D33002645D6 /* libharfbuzz.0.dylib */,
+				9A0F71341E110D33002645D6 /* libjpeg.8.dylib */,
+				9A0F71351E110D33002645D6 /* libjpeg.a */,
+				9A0F71361E110D33002645D6 /* libjpeg.8.dylib */,
+				9A0F71371E110D33002645D6 /* libltdl.7.dylib */,
+				9A0F71381E110D33002645D6 /* libltdl.a */,
+				9A0F71391E110D33002645D6 /* libltdl.7.dylib */,
+				9A0F713A1E110D33002645D6 /* liblzma.5.dylib */,
+				9A0F713B1E110D33002645D6 /* liblzma.a */,
+				9A0F713C1E110D33002645D6 /* liblzma.5.dylib */,
+				9A0F713D1E110D33002645D6 /* libmagic.1.dylib */,
+				9A0F713E1E110D33002645D6 /* libmagic.a */,
+				9A0F713F1E110D33002645D6 /* libmagic.1.dylib */,
+				9A0F71401E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */,
+				9A0F71411E110D33002645D6 /* libopencv_calib3d.3.2.0.dylib */,
+				9A0F71421E110D33002645D6 /* libopencv_core.3.2.0.dylib */,
+				9A0F71431E110D33002645D6 /* libopencv_core.3.2.0.dylib */,
+				9A0F71441E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */,
+				9A0F71451E110D33002645D6 /* libopencv_features2d.3.2.0.dylib */,
+				9A0F71461E110D33002645D6 /* libopencv_flann.3.2.0.dylib */,
+				9A0F71471E110D33002645D6 /* libopencv_flann.3.2.0.dylib */,
+				9A0F71481E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */,
+				9A0F71491E110D33002645D6 /* libopencv_highgui.3.2.0.dylib */,
+				9A0F714A1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */,
+				9A0F714B1E110D33002645D6 /* libopencv_imgcodecs.3.2.0.dylib */,
+				9A0F714C1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */,
+				9A0F714D1E110D33002645D6 /* libopencv_imgproc.3.2.0.dylib */,
+				9A0F714E1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */,
+				9A0F714F1E110D33002645D6 /* libopencv_ml.3.2.0.dylib */,
+				9A0F71501E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */,
+				9A0F71511E110D33002645D6 /* libopencv_objdetect.3.2.0.dylib */,
+				9A0F71521E110D33002645D6 /* libopencv_photo.3.2.0.dylib */,
+				9A0F71531E110D33002645D6 /* libopencv_photo.3.2.0.dylib */,
+				9A0F71541E110D33002645D6 /* libopencv_shape.3.2.0.dylib */,
+				9A0F71551E110D33002645D6 /* libopencv_shape.3.2.0.dylib */,
+				9A0F71561E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */,
+				9A0F71571E110D33002645D6 /* libopencv_stitching.3.2.0.dylib */,
+				9A0F71581E110D33002645D6 /* libopencv_superres.3.2.0.dylib */,
+				9A0F71591E110D33002645D6 /* libopencv_superres.3.2.0.dylib */,
+				9A0F715A1E110D33002645D6 /* libopencv_video.3.2.0.dylib */,
+				9A0F715B1E110D33002645D6 /* libopencv_video.3.2.0.dylib */,
+				9A0F715C1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */,
+				9A0F715D1E110D33002645D6 /* libopencv_videoio.3.2.0.dylib */,
+				9A0F715E1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */,
+				9A0F715F1E110D33002645D6 /* libopencv_videostab.3.2.0.dylib */,
+				9A0F71601E110D33002645D6 /* libosxfuse_i32.2.dylib */,
+				9A0F71611E110D33002645D6 /* libosxfuse_i32.la */,
+				9A0F71621E110D33002645D6 /* libosxfuse_i64.2.dylib */,
+				9A0F71631E110D33002645D6 /* libosxfuse_i64.la */,
+				9A0F71641E110D33002645D6 /* libosxfuse_i64.2.dylib */,
+				9A0F71651E110D33002645D6 /* libosxfuse_i64.2.dylib */,
+				9A0F71661E110D33002645D6 /* libosxfuse_i64.la */,
+				9A0F71671E110D33002645D6 /* libpango-1.0.0.dylib */,
+				9A0F71681E110D33002645D6 /* libpango-1.0.a */,
+				9A0F71691E110D33002645D6 /* libpango-1.0.0.dylib */,
+				9A0F716A1E110D33002645D6 /* libpangocairo-1.0.0.dylib */,
+				9A0F716B1E110D33002645D6 /* libpangocairo-1.0.a */,
+				9A0F716C1E110D33002645D6 /* libpangocairo-1.0.0.dylib */,
+				9A0F716D1E110D33002645D6 /* libpangoft2-1.0.0.dylib */,
+				9A0F716E1E110D33002645D6 /* libpangoft2-1.0.a */,
+				9A0F716F1E110D33002645D6 /* libpangoft2-1.0.0.dylib */,
+				9A0F71701E110D33002645D6 /* libpcre.1.dylib */,
+				9A0F71711E110D33002645D6 /* libpcre.a */,
+				9A0F71721E110D33002645D6 /* libpcre.1.dylib */,
+				9A0F71731E110D33002645D6 /* libpcre16.0.dylib */,
+				9A0F71741E110D33002645D6 /* libpcre16.a */,
+				9A0F71751E110D33002645D6 /* libpcre16.0.dylib */,
+				9A0F71761E110D33002645D6 /* libpcre32.0.dylib */,
+				9A0F71771E110D33002645D6 /* libpcre32.a */,
+				9A0F71781E110D33002645D6 /* libpcre32.0.dylib */,
+				9A0F71791E110D33002645D6 /* libpcrecpp.0.dylib */,
+				9A0F717A1E110D33002645D6 /* libpcrecpp.a */,
+				9A0F717B1E110D33002645D6 /* libpcrecpp.0.dylib */,
+				9A0F717C1E110D33002645D6 /* libpcreposix.0.dylib */,
+				9A0F717D1E110D33002645D6 /* libpcreposix.a */,
+				9A0F717E1E110D33002645D6 /* libpcreposix.0.dylib */,
+				9A0F717F1E110D33002645D6 /* libpeas-1.0.0.dylib */,
+				9A0F71801E110D33002645D6 /* libpeas-1.0.0.dylib */,
+				9A0F71811E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */,
+				9A0F71821E110D33002645D6 /* libpeas-gtk-1.0.0.dylib */,
+				9A0F71831E110D33002645D6 /* libpgcommon.a */,
+				9A0F71841E110D33002645D6 /* libpgport.a */,
+				9A0F71851E110D33002645D6 /* libpgtypes.3.5.dylib */,
+				9A0F71861E110D33002645D6 /* libpgtypes.3.5.dylib */,
+				9A0F71871E110D33002645D6 /* libpgtypes.a */,
+				9A0F71881E110D33002645D6 /* libpgtypes.3.5.dylib */,
+				9A0F71891E110D33002645D6 /* libpixman-1.0.dylib */,
+				9A0F718A1E110D33002645D6 /* libpixman-1.a */,
+				9A0F718B1E110D33002645D6 /* libpixman-1.0.dylib */,
+				9A0F718C1E110D33002645D6 /* libpng16.a */,
+				9A0F718D1E110D33002645D6 /* libpng16.16.dylib */,
+				9A0F718E1E110D33002645D6 /* libpng16.16.dylib */,
+				9A0F718F1E110D33002645D6 /* libpng16.a */,
+				9A0F71901E110D33002645D6 /* libpng16.16.dylib */,
+				9A0F71911E110D33002645D6 /* libpopt.0.dylib */,
+				9A0F71921E110D33002645D6 /* libpopt.a */,
+				9A0F71931E110D33002645D6 /* libpopt.0.dylib */,
+				9A0F71941E110D33002645D6 /* libpq.5.7.dylib */,
+				9A0F71951E110D33002645D6 /* libpq.5.7.dylib */,
+				9A0F71961E110D33002645D6 /* libpq.a */,
+				9A0F71971E110D33002645D6 /* libpq.5.7.dylib */,
+				9A0F71981E110D33002645D6 /* libpspell.15.dylib */,
+				9A0F71991E110D33002645D6 /* libpspell.15.dylib */,
+				9A0F719A1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */,
+				9A0F719B1E110D33002645D6 /* libpyglib-2.0-python.0.dylib */,
+				9A0F719C1E110D33002645D6 /* librpm-5.4.dylib */,
+				9A0F719D1E110D33002645D6 /* librpm.a */,
+				9A0F719E1E110D33002645D6 /* librpm-5.4.dylib */,
+				9A0F719F1E110D33002645D6 /* librpmbuild-5.4.dylib */,
+				9A0F71A01E110D33002645D6 /* librpmbuild.a */,
+				9A0F71A11E110D33002645D6 /* librpmbuild-5.4.dylib */,
+				9A0F71A21E110D33002645D6 /* librpmconstant-5.4.dylib */,
+				9A0F71A31E110D33002645D6 /* librpmconstant.a */,
+				9A0F71A41E110D33002645D6 /* librpmconstant-5.4.dylib */,
+				9A0F71A51E110D33002645D6 /* librpmdb-5.4.dylib */,
+				9A0F71A61E110D33002645D6 /* librpmdb.a */,
+				9A0F71A71E110D33002645D6 /* librpmdb-5.4.dylib */,
+				9A0F71A81E110D33002645D6 /* librpmio-5.4.dylib */,
+				9A0F71A91E110D33002645D6 /* librpmio.a */,
+				9A0F71AA1E110D33002645D6 /* librpmio-5.4.dylib */,
+				9A0F71AB1E110D33002645D6 /* librpmmisc-5.4.dylib */,
+				9A0F71AC1E110D33002645D6 /* librpmmisc.a */,
+				9A0F71AD1E110D33002645D6 /* librpmmisc-5.4.dylib */,
+				9A0F71AE1E110D33002645D6 /* librsvg-2.2.dylib */,
+				9A0F71AF1E110D33002645D6 /* librsvg-2.a */,
+				9A0F71B01E110D33002645D6 /* librsvg-2.2.dylib */,
+				9A0F71B11E110D33002645D6 /* libtasn1.6.dylib */,
+				9A0F71B21E110D33002645D6 /* libtasn1.a */,
+				9A0F71B31E110D33002645D6 /* libtasn1.6.dylib */,
+				9A0F71B41E110D33002645D6 /* libtiff.5.dylib */,
+				9A0F71B51E110D33002645D6 /* libtiff.a */,
+				9A0F71B61E110D33002645D6 /* libtiff.5.dylib */,
+				9A0F71B71E110D33002645D6 /* libtiffxx.5.dylib */,
+				9A0F71B81E110D33002645D6 /* libtiffxx.a */,
+				9A0F71B91E110D33002645D6 /* libtiffxx.5.dylib */,
+				9A0F71BA1E110D33002645D6 /* libuuid.16.dylib */,
+				9A0F71BB1E110D33002645D6 /* libuuid.a */,
+				9A0F71BC1E110D33002645D6 /* libuuid.16.dylib */,
+				9A0F71BD1E110D33002645D6 /* libyara.a */,
+				9A0F71BE1E110D33002645D6 /* libyara.3.dylib */,
+				9A0F71BF1E110D33002645D6 /* libyara.la */,
+				9ACFCB0D1E1107E300883AA7 /* opencv_test */,
+				9ACFCB0C1E1107E300883AA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ACFCB0C1E1107E300883AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFCB0B1E1107E300883AA7 /* opencv_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACFCB0D1E1107E300883AA7 /* opencv_test */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFCB0E1E1107E300883AA7 /* main.cpp */,
+			);
+			path = opencv_test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ACFCB0A1E1107E300883AA7 /* opencv_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACFCB121E1107E300883AA7 /* Build configuration list for PBXNativeTarget "opencv_test" */;
+			buildPhases = (
+				9ACFCB071E1107E300883AA7 /* Sources */,
+				9ACFCB081E1107E300883AA7 /* Frameworks */,
+				9ACFCB091E1107E300883AA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opencv_test;
+			productName = opencv_test;
+			productReference = 9ACFCB0B1E1107E300883AA7 /* opencv_test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ACFCB031E1107E300883AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = XiaoPeng;
+				TargetAttributes = {
+					9ACFCB0A1E1107E300883AA7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 9ACFCB061E1107E300883AA7 /* Build configuration list for PBXProject "opencv_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9ACFCB021E1107E300883AA7;
+			productRefGroup = 9ACFCB0C1E1107E300883AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ACFCB0A1E1107E300883AA7 /* opencv_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ACFCB071E1107E300883AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACFCB0F1E1107E300883AA7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9ACFCB101E1107E300883AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9ACFCB111E1107E300883AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9ACFCB131E1107E300883AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+					/usr/local/include/opencv,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9ACFCB141E1107E300883AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+					/usr/local/include/opencv,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ACFCB061E1107E300883AA7 /* Build configuration list for PBXProject "opencv_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACFCB101E1107E300883AA7 /* Debug */,
+				9ACFCB111E1107E300883AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACFCB121E1107E300883AA7 /* Build configuration list for PBXNativeTarget "opencv_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACFCB131E1107E300883AA7 /* Debug */,
+				9ACFCB141E1107E300883AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ACFCB031E1107E300883AA7 /* Project object */;
+}
