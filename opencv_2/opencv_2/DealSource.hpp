@@ -12,19 +12,27 @@
 #include <stdio.h>
 #include "CreatNewPicture.hpp"
 #include "Header.h"
-#define K_NUMB 10
+#define K_NUMB 5
 #include <string>
 #include <iostream>
 #include <vector>
 using namespace std;
 
+typedef struct Line{
+    double CV_COMP_CHISQR_numb;
+    double CV_COMP_BHATTACHARYYA_numb;
+    double CV_COMP_CORREL_numb;
+    double CV_COMP_INTERSECT_numb;
+    string Name;
+    string Path;
+}Likeline;
 
 typedef struct TestLine{
     string Name;
     string Path;
     string NewPath;
-    string MostLike[K_NUMB];
-    string NewLike[K_NUMB];
+    Likeline MostLike[K_NUMB];
+    Likeline NewLike[K_NUMB];
     int LikeCount;
 }testline;
 

@@ -17,8 +17,11 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/objdetect/objdetect.hpp>
 #include <opencv2/highgui.hpp>
-
-
+#define CV_COMP_CHISQR_T 0
+#define CV_COMP_BHATTACHARYYA_T 1
+#define CV_COMP_CORREL_T 2
+#define CV_COMP_INTERSECT_T 3
+double CompareGet(int choose, char *srcImagePath, char *targetImagePath);
 int comparetest(int argc, char* argv[]);
 
 
