@@ -23,7 +23,7 @@
 #define CV_COMP_INTERSECT_T 3
 double CompareGet(int choose, char *srcImagePath, char *targetImagePath);
 int comparetest(int argc, char* argv[]);
-
+int newcomparetest(int argc, char* argv[]);
 
 
 #endif /* Header_h */

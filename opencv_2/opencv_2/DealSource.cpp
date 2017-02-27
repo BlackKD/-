@@ -9,8 +9,9 @@
 #include "DealSource.hpp"
 #include "CreatNewPicture.hpp"
 #include "Header.h"
+#include <fstream>
 #include <dirent.h>
-
+char result_dir[] = "/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test_result/";
 char  TestPath[] = "/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/";
 vector<TestLine> TestPool;
 bool InitializationPool(const char * FilePath)
@@ -41,8 +42,12 @@ bool InitializationPool(const char * FilePath)
 
 bool get_10_top_path()
 {
+    
     for(int i= 0;i<TestPool.size();i++)
     {
+        string result = result_dir + TestPool[i].Name + ".txt";
+        ofstream fout(result,ios::out);
+        
         Likeline *temp = new Likeline[TestPool.size()];
         for(int j=0;j<TestPool.size();j++)
         {
@@ -95,7 +100,9 @@ bool get_10_top_path()
             TestPool[i].MostLike[k].Path = temp[k].Path;
             TestPool[i].MostLike[k].CV_COMP_CHISQR_numb = temp[k].CV_COMP_CHISQR_numb;
             cout<<TestPool[i].MostLike[k].Name<<" "<<TestPool[i].MostLike[k].CV_COMP_CHISQR_numb<<endl;
+            fout<<TestPool[i].MostLike[k].Name<<" "<<TestPool[i].MostLike[k].CV_COMP_CHISQR_numb<<" "<<TestPool[i].MostLike[k].Path<<endl;
         }
+        fout.close();
     }
     return true;
     

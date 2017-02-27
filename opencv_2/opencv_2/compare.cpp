@@ -17,9 +17,10 @@
 using namespace std;
 using namespace cv;
 
-String srcImage ="/Users/xiaopeng/Downloads/14-220/14-220/141220007.JPG" ;
-String targetImage = "/Users/xiaopeng/Downloads/14-220/14-220/141220003.JPG";
+String srcImage ="/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/5_c.png" ;
+String targetImage = "/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/2.png";
 String cascadeName = "/Users/xiaopeng/Downloads/opencv-3.2.0/data/haarcascades/haarcascade_frontalface_alt2.xml";
+
 
 IplImage* cutImage(IplImage* src, CvRect rect) {
     cvSetImageROI(src, rect);
@@ -331,8 +332,8 @@ int comparetest(int argc, char* argv[])
         return -1;
     }
     //    cvSaveImage("d:\\face1.jpg", faceImage2, 0);
-//    imshow("image1", Mat(faceImage1));
-//    imshow("image2", Mat(faceImage2));
+    imshow("image1", Mat(faceImage1));
+    imshow("image2", Mat(faceImage2));
     
     CompareHist(faceImage1, faceImage2);
     cvWaitKey(0);  
@@ -341,7 +342,34 @@ int comparetest(int argc, char* argv[])
     return 0;  
 }
 
+int newcomparetest(int argc, char* argv[])
+{
+    Mat target;
+    target = imread(targetImage);
+    
+    char name[]="/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/5_c.png" ;
+    CascadeClassifier cascade;
+    namedWindow("image1");
+    namedWindow("image2");
+    if( !cascade.load( cascadeName ) )
+    {
+        return -1;
+    }
 
+    IplImage* faceImage1 = cvLoadImage(name);
+    IplImage* faceImage2 = detect(target, cascade, 1);
+
+
+    //    cvSaveImage("d:\\face1.jpg", faceImage2, 0);
+    imshow("image1", Mat(faceImage1));
+    imshow("image2", Mat(faceImage2));
+    
+    CompareHist(faceImage1, faceImage2);
+    cvWaitKey(0);
+    cvReleaseImage(&faceImage1);
+    cvReleaseImage(&faceImage2);
+    return 0;
+}
 
 double CompareGet(int choose, char *srcImagePath, char *targetImagePath)
 {
@@ -371,8 +399,8 @@ double CompareGet(int choose, char *srcImagePath, char *targetImagePath)
         return -1;
     }
     //    cvSaveImage("d:\\face1.jpg", faceImage2, 0);
-    imshow("image1", Mat(faceImage1));
-    imshow("image2", Mat(faceImage2));
+//    imshow("image1", Mat(faceImage1));
+//    imshow("image2", Mat(faceImage2));
     double result = 0;
     switch (choose) {
         case CV_COMP_CHISQR_T:
@@ -391,8 +419,8 @@ double CompareGet(int choose, char *srcImagePath, char *targetImagePath)
             break;
     }
 //    CompareHist(faceImage1, faceImage2);
-    cvWaitKey(0);
-    cvReleaseImage(&faceImage1);
-    cvReleaseImage(&faceImage2);
+//    cvWaitKey(0);
+//    cvReleaseImage(&faceImage1);
+//    cvReleaseImage(&faceImage2);
     return result;
 }
