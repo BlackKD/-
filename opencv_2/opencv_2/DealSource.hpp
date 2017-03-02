@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "CreatNewPicture.hpp"
 #include "Header.h"
-#define K_NUMB 5
+#define K_NUMB 25
 #include <string>
 #include <iostream>
 #include <vector>
@@ -40,5 +40,6 @@ extern vector<TestLine> TestPool;
 
 bool InitializationPool(const char * FilePath);
 bool get_10_top_path();
+bool get_new_10_top_path();
 
 #endif /* DealSource_hpp */

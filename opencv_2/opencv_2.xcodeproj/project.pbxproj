@@ -152,6 +152,8 @@
 		9AA4AB221E605698000D5526 /* CreatNewPicture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CreatNewPicture.hpp; sourceTree = "<group>"; };
 		9ADE37011E1398CD00D9ABF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		9ADE370D1E13C38500D9ABF9 /* get_u_piture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = get_u_piture.h; sourceTree = "<group>"; };
+		9AEEE8571E67C2F000A1A090 /* test_new */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test_new; sourceTree = "<group>"; };
+		9AEEE8581E67CE7800A1A090 /* test_result_new */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test_result_new; sourceTree = "<group>"; };
 		9AF37CC01E61746600B88CA1 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +321,8 @@
 		9ADE37021E139CE800D9ABF9 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				9AEEE8581E67CE7800A1A090 /* test_result_new */,
+				9AEEE8571E67C2F000A1A090 /* test_new */,
 				9A98A6061E644E78006713D8 /* test_result */,
 				9AF37CC01E61746600B88CA1 /* test */,
 				9A765E101E5D8BF5000EE0D7 /* 14-220 */,

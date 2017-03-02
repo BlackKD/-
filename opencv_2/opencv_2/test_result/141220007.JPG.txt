@@ -1,5 +1,0 @@
-141220007.JPG 0 /Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/141220007.JPG
-141220005.JPG 0.241064 /Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/141220005.JPG
-141220015.JPG 0.321808 /Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/141220015.JPG
-141220008.JPG 0.545331 /Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/141220008.JPG
-141220001.JPG 0.636714 /Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/141220001.JPG

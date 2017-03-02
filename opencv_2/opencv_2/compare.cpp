@@ -424,3 +424,57 @@ double CompareGet(int choose, char *srcImagePath, char *targetImagePath)
 //    cvReleaseImage(&faceImage2);
     return result;
 }
+
+
+double Compare_New_Get(int choose, char *srcImagePath, char *targetImagePath)
+{
+    
+    srcImage = srcImagePath;
+    targetImage = targetImagePath;
+    CascadeClassifier cascade;
+    namedWindow("image1");
+    namedWindow("image2");
+    if( !cascade.load( cascadeName ) )
+    {
+        return -1;
+    }
+    
+    Mat srcImg, targetImg;
+    IplImage* faceImage1;
+    IplImage* faceImage2;
+    srcImg = imread(srcImage);
+    targetImg = imread(targetImage);
+    IplImage temp = IplImage(srcImg);
+    faceImage1 = &temp;
+//    faceImage1 = detect(srcImg, cascade, 1);
+
+    faceImage2 = detect(targetImg, cascade, 1);
+    if (faceImage2 == NULL) {
+        return -1;
+    }
+    //    cvSaveImage("d:\\face1.jpg", faceImage2, 0);
+    //    imshow("image1", Mat(faceImage1));
+    //    imshow("image2", Mat(faceImage2));
+    double result = 0;
+    switch (choose) {
+        case CV_COMP_CHISQR_T:
+            result = CompareHist_CV_COMP_CHISQR(faceImage1, faceImage2);
+            break;
+        case CV_COMP_CORREL_T:
+            result = CompareHist_CV_COMP_CORREL(faceImage1, faceImage2);
+            break;
+        case CV_COMP_INTERSECT_T:
+            result = CompareHist_CV_COMP_INTERSECT(faceImage1, faceImage2);
+            break;
+        case CV_COMP_BHATTACHARYYA_T:
+            result = CompareHist_CV_COMP_BHATTACHARYYA(faceImage1, faceImage2);
+            break;
+        default:
+            break;
+    }
+    //    CompareHist(faceImage1, faceImage2);
+    //    cvWaitKey(0);
+    //    cvReleaseImage(&faceImage1);
+    //    cvReleaseImage(&faceImage2);
+    return result;
+}

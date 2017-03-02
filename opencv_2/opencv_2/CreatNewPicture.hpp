@@ -18,10 +18,15 @@
 #include <opencv2/objdetect/objdetect.hpp>
 #include <opencv2/highgui.hpp>
 #include "Header.h"
+#include <dirent.h>
+#include "DealSource.hpp"
 using namespace cv;
 using namespace std;
 int test1();
 int test2();
+Mat detectandgive( string path);
+bool Control_new_Picture();
+bool get_color_new_picture(string Path);
 void detectAndCut( string path ,string dir, string filename);
 int test3();
 #endif /* CreatNewPicture_hpp */

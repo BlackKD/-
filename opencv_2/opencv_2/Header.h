@@ -21,6 +21,7 @@
 #define CV_COMP_BHATTACHARYYA_T 1
 #define CV_COMP_CORREL_T 2
 #define CV_COMP_INTERSECT_T 3
+double Compare_New_Get(int choose, char *srcImagePath, char *targetImagePath);
 double CompareGet(int choose, char *srcImagePath, char *targetImagePath);
 int comparetest(int argc, char* argv[]);
 int newcomparetest(int argc, char* argv[]);

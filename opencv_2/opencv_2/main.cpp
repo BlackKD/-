@@ -6,11 +6,16 @@
 #include <iostream>
 #include "Header.h"
 #include "DealSource.hpp"
+
+
 int main()
 {
-    InitializationPool("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test");
+    InitializationPool("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/");
     get_10_top_path();
     
+//    test3();
+    Control_new_Picture();
+    get_new_10_top_path();
 //    return newcomparetest(0,0);
     return 0;
 }
