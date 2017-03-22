@@ -207,7 +207,7 @@ bool get_color_new_picture(string Path)
    // 线性叠加
     Mat img = file[0];
 //    double alpha = 1 - double(1/(double)K_NUMB);
-    double alpha = 0.2;
+    double alpha = 0.1;
     double beta;
     beta = (1.0 - alpha);
     for(int i = 1;i < K_NUMB;i++)
