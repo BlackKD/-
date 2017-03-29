@@ -64,6 +64,7 @@
 		9A0F734B1E138E1D002645D6 /* libopencv_videostab.2.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F73141E138E1D002645D6 /* libopencv_videostab.2.4.dylib */; };
 		9A0F734C1E138E1D002645D6 /* libopencv_videostab.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F73151E138E1D002645D6 /* libopencv_videostab.dylib */; };
 		9A765E0B1E5C0BFA000EE0D7 /* compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A765E0A1E5C0BFA000EE0D7 /* compare.cpp */; };
+		9A9A319F1E8B78EF00F433E3 /* result.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A319D1E8B78EF00F433E3 /* result.cpp */; };
 		9AA4AB201E605649000D5526 /* DealSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4AB1E1E605649000D5526 /* DealSource.cpp */; };
 		9AA4AB231E605698000D5526 /* CreatNewPicture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4AB211E605698000D5526 /* CreatNewPicture.cpp */; };
 /* End PBXBuildFile section */
@@ -146,6 +147,8 @@
 		9A765E101E5D8BF5000EE0D7 /* 14-220 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "14-220"; sourceTree = "<group>"; };
 		9A98A6061E644E78006713D8 /* test_result */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test_result; sourceTree = "<group>"; };
 		9A98A6071E645239006713D8 /* 5_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_c.png; sourceTree = "<group>"; };
+		9A9A319D1E8B78EF00F433E3 /* result.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = result.cpp; sourceTree = "<group>"; };
+		9A9A319E1E8B78EF00F433E3 /* result.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = result.hpp; sourceTree = "<group>"; };
 		9AA4AB1E1E605649000D5526 /* DealSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DealSource.cpp; sourceTree = "<group>"; };
 		9AA4AB1F1E605649000D5526 /* DealSource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DealSource.hpp; sourceTree = "<group>"; };
 		9AA4AB211E605698000D5526 /* CreatNewPicture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatNewPicture.cpp; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				9AA4AB1F1E605649000D5526 /* DealSource.hpp */,
 				9AA4AB211E605698000D5526 /* CreatNewPicture.cpp */,
 				9AA4AB221E605698000D5526 /* CreatNewPicture.hpp */,
+				9A9A319D1E8B78EF00F433E3 /* result.cpp */,
+				9A9A319E1E8B78EF00F433E3 /* result.hpp */,
 			);
 			path = opencv_2;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				9AA4AB231E605698000D5526 /* CreatNewPicture.cpp in Sources */,
 				9A765E0B1E5C0BFA000EE0D7 /* compare.cpp in Sources */,
 				9AA4AB201E605649000D5526 /* DealSource.cpp in Sources */,
+				9A9A319F1E8B78EF00F433E3 /* result.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 #include "DealSource.hpp"
 using namespace std;
 using namespace cv;
+#include "result.hpp"
 #define cvQueryHistValue_1D( hist, idx0 ) \
 ((float)cvGetReal1D( (hist)->bins, (idx0)))
 int myhist( )
@@ -57,12 +58,14 @@ int main()
 {
 //    myhist();
 //    exit(0);
+    
     InitializationPool("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/");
     get_10_top_path();
     
 //    test3();
+    
     Control_new_Picture();
-    get_new_10_top_path();
+    K_check("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test_result_new/", 25);
 //    return newcomparetest(0,0);
     return 0;
 }
