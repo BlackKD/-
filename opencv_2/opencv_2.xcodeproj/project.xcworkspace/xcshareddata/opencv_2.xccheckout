@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3EE39976-4DFE-4096-B3BD-F7689A954D09</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>opencv_2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>72CBBEB7D1308CD7593386EE79FFFCB5F5C7D5C4</key>
 		<string>https://github.com/BlackKD/-.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>opencv_2/opencv_2.xcodeproj/project.xcworkspace</string>
+	<string>opencv_2/opencv_2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>72CBBEB7D1308CD7593386EE79FFFCB5F5C7D5C4</key>

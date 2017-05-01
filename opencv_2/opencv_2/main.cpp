@@ -54,18 +54,53 @@ int myhist( )
     return 0;
 }
 
-int main()
+int real()
 {
-//    myhist();
-//    exit(0);
-    
     InitializationPool("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test/");
     get_10_top_path();
     
-//    test3();
+    //    test3();
     
     Control_new_Picture();
     K_check("/Users/xiaopeng/Desktop/毕业设计/opencv_2/opencv_2/test_result_new/", 25);
-//    return newcomparetest(0,0);
+    //return newcomparetest(0,0);
+    return 0;
+}
+
+int result_after_DP(int *value,int sum,double E)
+{
+    double *result = new double[sum];
+    for(int i = 0; i < sum;i++)
+    {
+        result[i] = exp(E*value[i]/2);
+    }
+    double s =0;
+    for(int i = 0;i< sum;i++)
+    {
+        s += result[i];
+    }
+    for(int i = 0 ; i < sum; i++)
+    {
+        result[i] = result[i]/s;
+    }
+    for(int i = 0;i < sum;i++)
+    {
+        cout<<(double)value[i]/167<<" ";
+        cout<<result[i]<<endl;
+    }
+    return 0;
+}
+int DP()
+{
+    int value[7] = {10,31,31,6,26,47,16};
+    result_after_DP(value, 7, 0.09);
+    return 0;
+}
+
+int main()
+{
+//    myhist();
+    DP();
+//    real();
     return 0;
 }

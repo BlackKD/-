@@ -139,6 +139,7 @@
 		9A0F73131E138E1D002645D6 /* libopencv_videostab.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.2.4.13.dylib; sourceTree = "<group>"; };
 		9A0F73141E138E1D002645D6 /* libopencv_videostab.2.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.2.4.dylib; sourceTree = "<group>"; };
 		9A0F73151E138E1D002645D6 /* libopencv_videostab.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videostab.dylib; sourceTree = "<group>"; };
+		9A4CB2571EB721B900C4E196 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		9A765E0A1E5C0BFA000EE0D7 /* compare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare.cpp; sourceTree = "<group>"; };
 		9A765E0C1E5C0E0A000EE0D7 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9A765E0D1E5C12B6000EE0D7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -336,6 +337,7 @@
 				9A98A6071E645239006713D8 /* 5_c.png */,
 				9A765E0D1E5C12B6000EE0D7 /* 2.png */,
 				9ADE37011E1398CD00D9ABF9 /* 1.jpg */,
+				9A4CB2571EB721B900C4E196 /* File */,
 			);
 			name = source;
 			path = opencv_2;
