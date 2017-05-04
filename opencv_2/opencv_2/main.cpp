@@ -67,9 +67,14 @@ int real()
     return 0;
 }
 
-int result_after_DP(int *value,int sum,double E)
+double* result_after_DP(int *value,int sum,double E)
 {
     double *result = new double[sum];
+    int m = 0;
+    for(int i = 0 ; i < sum; i++)
+    {
+        m += value[i];
+    }
     for(int i = 0; i < sum;i++)
     {
         result[i] = exp(E*value[i]/2);
@@ -83,17 +88,30 @@ int result_after_DP(int *value,int sum,double E)
     {
         result[i] = result[i]/s;
     }
+    
     for(int i = 0;i < sum;i++)
     {
-        cout<<(double)value[i]/167<<" ";
+        cout<<(double)value[i]/m<<" ";
         cout<<result[i]<<endl;
     }
-    return 0;
+    return result;
 }
 int DP()
 {
-    int value[7] = {10,31,31,6,26,47,16};
-    result_after_DP(value, 7, 0.09);
+  int value[7] = {10,31,31,6,26,47,16};
+//    int value[7] = {8,27,29,5,24,42,15};
+    double D[7] = {10,31,31,6,26,47,16};
+    int sum = 0;
+    for(int i = 0 ; i < 7; i++)
+    {
+        sum += value[i];
+    }
+    for(int i = 0; i < 7;i++)
+    {
+        D[i] = (double)value[i]/sum;
+    }
+//    result_after_DP(value, 7, 0.1);
+    D_check(D, result_after_DP(value, 7, 0.01), 7);
     return 0;
 }
 

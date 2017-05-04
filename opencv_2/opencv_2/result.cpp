@@ -79,3 +79,18 @@ double K_check(string Path,int comp_numb)
     cout<<"K_check:"<<1- double(ess)/double(files.size())<<endl;
     return ess/files.size();
 }
+
+#include <math.h>
+bool D_check(double* R,double* D,int sum)
+{
+    
+    double L = 0;
+    for(int i = 0 ;i< sum;i++)
+    {
+        L+= pow((R[i] - D[i]),2);
+    }
+    cout<<L<<endl;
+    if(L > 0.005)
+        return false;
+    return true;
+}

@@ -14,4 +14,5 @@
 #include "CreatNewPicture.hpp"
 #include "Header.h"
 double K_check(string Path,int comp_numb);
+bool D_check(double* R,double* D,int sum);
 #endif /* result_hpp */
